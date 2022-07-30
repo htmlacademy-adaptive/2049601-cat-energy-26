@@ -7,8 +7,10 @@
 </head>
 
 <body class="page__body">
+  <!-- Header -->
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
+    <!-- Logo -->
+    <a class="main-header__logo">
       <span class="visually-hidden">Логотип</span>
       <svg class="logo-icon" aria-hidden="true" focusable="false" width="34" height="38" viewBox="0 0 34 38" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +41,7 @@
         </defs>
       </svg>
     </a>
-    <a class="main-header__logo-text" href="index.html">
+    <a class="main-header__logo-text">
       <span class="visually-hidden">Магазин Кэт энерджи</span>
       <svg class="logo-text" aria-hidden="true" focusable="false" width="101" height="18" viewBox="0 0 101 18"
         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,6 +56,7 @@
         </defs>
       </svg>
     </a>
+    <!-- Navigation -->
     <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -61,23 +64,24 @@
       <div class="main-nav__wrapper main-nav--closed">
         <ul class="main-nav__list main-menu">
           <li class="main-menu__item main-menu__item--current">
-            <a href="index.html">Главная</a>
+            <a class="main-menu__link">Главная</a>
           </li>
           <li class="main-menu__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-menu__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="main-menu__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
+  <!-- Main -->
   <main class="main-container">
     <h1 class="visually-hidden">
       Интернет-магазин Кэт энерджи
     </h1>
-
+    <!-- Program -->
     <section class="program">
       <div class="program__wrapper">
         <h2 class="program__title">
@@ -89,7 +93,7 @@
         <a class="program__link" href="form.html">Подобрать программу</a>
       </div>
     </section>
-
+    <!-- Categories -->
     <section class="categories">
       <div class="categories__wrapper">
         <h2 class="visually-hidden">Варианты рациона для кошек</h2>
@@ -98,7 +102,7 @@
             <h3 class="categories__title">
               Похудение
             </h3>
-            <p class="categories__slogan">
+            <p class="categories__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
               поможет вашему питомцу сбросить лишний вес.
             </p>
@@ -108,7 +112,7 @@
             <h3 class="categories__title">
               Набор массы
             </h3>
-            <p class="categories__slogan">
+            <p class="categories__description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
               необходимые мышцы!
             </p>
@@ -117,7 +121,7 @@
         </ul>
       </div>
     </section>
-
+    <!-- Advantages -->
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="advantages__title">
@@ -125,28 +129,28 @@
         </h2>
         <ol class="advantages__list">
           <li class="advantages__item advantages__item--composition">
-            <p class="advantages__text">
+            <p class="advantages__description">
               Функциональное питание
               содержит только полезные
               питательные вещества.
             </p>
           </li>
           <li class="advantages__item advantages__item--form">
-            <p class="advantages__text">
+            <p class="advantages__description">
               Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.
             </p>
           </li>
           <li class="advantages__item advantages__item--use">
-            <p class="advantages__text">
+            <p class="advantages__description">
               Замените один-два приема
               обычной еды на наше
               функциональное питание.
             </p>
           </li>
           <li class="advantages__item advantages__item--result">
-            <p class="advantages__text">
+            <p class="advantages__description">
               Уже через месяц
               наслаждайтесь изменениями
               к лучшему вашего питомца!
@@ -154,9 +158,63 @@
           </li>
         </ol>
       </div>
-
     </section>
-
+    <!-- Result -->
+    <section class="result">
+      <div class="result__wrapper">
+        <header class="result__header">
+          <h2 class="result__title">
+            Живой пример
+          </h2>
+          <p class="result__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim. Отличный
+            результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в
+            день. </p>
+        </header>
+        <dl class="result__list">
+          <div class="result__item">
+            <dt class="result__number">
+              5 кг
+            </dt>
+            <dd class="result__description">
+              снижение веса
+            </dd>
+          </div>
+          <div class="result__item">
+            <dt class="result__number">
+              60 дней
+            </dt>
+            <dd class="result__description">
+              затрачено времени
+            </dd>
+          </div>
+          <div class="result__item">
+            <dt class="result__number">
+              15 000 руб.
+            </dt>
+            <dd class="result__description">
+              Затраты на питание:
+            </dd>
+          </div>
+        </dl>
+        <div class="result__photo slider">
+          <div class="photo-list slider__list">
+            <img class="photo-list__item slider__item" src="img/before-mobile.png" width="280" height="232"
+              alt="Фото толстого кота">
+            <img class="photo-list__item slider__item" src="img/after-mobile.png" width="243" height="232"
+              alt="Фото худого кота">
+          </div>
+          <div class="result__toggles slider__toggles">
+            <button class="slider__toggle">Было</button>
+            <div class="slider__scale">
+              <span class="slider__bar"></span>
+            </div>
+            <button class="slider__toggle">Стало</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contacts -->
     <section class="contacts">
       <div class="contacts-wrapper">
         <h2 class="visually-hidden">
@@ -175,9 +233,11 @@
       </div>
     </section>
   </main>
+  <!-- Footer -->
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="main-footer__link" href="index.html">
+      <!-- Logo -->
+      <a class="main-footer__link">
         <span class="visually-hidden">Магазин Кэт энерджи</span>
         <svg class="logo-text" aria-hidden="true" focusable="false" width="128" height="24" viewBox="0 0 128 24"
           fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,6 +252,7 @@
           </defs>
         </svg>
       </a>
+      <!-- Social -->
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -235,6 +296,7 @@
           </li>
         </ul>
       </div>
+      <!-- Copyright -->
       <div class="main-footer__copyright copyright">
         <a class="copyright___link-text" href="https://htmlacademy.ru/">HTML Academy</a>
         <a class="copyright___link-logo" href="https://htmlacademy.ru/">
@@ -251,7 +313,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
