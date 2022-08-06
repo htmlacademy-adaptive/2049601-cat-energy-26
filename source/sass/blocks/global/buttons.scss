@@ -1,10 +1,13 @@
 .button {
+  display: inline-block;
+  padding: 10px 0 10px 0;
   border: none;
   font-size: 16px;
   line-height: 20px;
   background-color: #68b738;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .button--all {
