@@ -1,12 +1,6 @@
-@mixin visually-hidden() {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+/*@use "blocks/mixins.scss"; подключение миксина в офносном фалйе и там где используется
+
+.visually-hidden {
+  @include mixins.название миксина;
 }
+*/

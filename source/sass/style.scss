@@ -1,8 +1,5 @@
 // Начните писать стили здесь
 
 @use "blocks/mixins.scss";
-
-
-.visually-hidden {
-  @include visually-hidden;
-}
+@use "blocks/global/fonts.scss";
+@use "blocks/global/global.scss";
