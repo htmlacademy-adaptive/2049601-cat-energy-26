@@ -1,5 +1,23 @@
-// Начните писать стили здесь
-
-@use "blocks/mixins.scss";
+/*Global*/
+@use "blocks/global/mixins.scss";
 @use "blocks/global/fonts.scss";
-@use "blocks/global/global.scss";
+@use "blocks/global/utils.scss";
+@use "blocks/global/page.scss";
+@use "blocks/global/buttons.scss";
+/*Header*/
+@use "blocks/header/main-header.scss";
+@use "blocks/header/main-menu.scss";
+@use "blocks/header/main-nav.scss";
+/*Footer*/
+@use "blocks/footer/main-footer.scss";
+@use "blocks/footer/social.scss";
+@use "blocks/footer/copyright.scss";
+/*Main Index*/
+@use "blocks/index/program.scss";
+@use "blocks/index/categories.scss";
+@use "blocks/index/advantages.scss";
+@use "blocks/index/counters.scss";
+@use "blocks/index/result.scss";
+@use "blocks/index/slider.scss";
+@use "blocks/index/contacts.scss";
+@use "blocks/index/adress.scss";
