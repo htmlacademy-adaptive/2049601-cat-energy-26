@@ -1,0 +1,437 @@
+@charset "UTF-8";
+/*@use "blocks/mixins.scss"; подключение миксина в офносном фалйе и там где используется
+
+.visually-hidden {
+  @include mixins.название миксина;
+}
+*/
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.page {
+  height: 100%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 0 10px 0;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #68b738;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button--all {
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+.main-container__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.adress {
+  line-height: 20px;
+}
+
+.adress__welcome {
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.adress__text {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+.main-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.main-menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-menu__link {
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: 1px solid #d9d9d9;
+}
+
+.copyright___link-text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.program {
+  padding: 27px 20px 0;
+  background-color: #68b738;
+  background-image: url("../img/background-index.png");
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.program__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.program__slogan {
+  line-height: 14px;
+}
+
+.program__link {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 7px 0 7px 0;
+}
+
+.categories {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.categories__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.categories__item {
+  background-color: #f2f2f2;
+}
+
+.categories__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.categories__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.categories__description {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+.categories__link {
+  text-decoration: none;
+  color: #000000;
+  line-height: 16px;
+}
+
+.advantages {
+  padding: 20px 20px 50px;
+}
+
+.advantages__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.counters {
+  counter-reset: section;
+}
+
+.counters__item::before {
+  counter-increment: section;
+  content: counter(section);
+}
+
+.result {
+  background-color: #eaeaea;
+}
+
+.result__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.result__list {
+  margin: 0;
+  padding: 0;
+}
+
+.result__text {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+.result__number {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.result__description {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.result__number--price {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.result__description--price {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.slider__toggle {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product__link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.product__info-item {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-all__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.catalog-all__text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.additional-catalog__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional-catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product-add__title {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.product-add__info {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.gift {
+  background-color: #68b738;
+  background-image: url("../img/background-catalog.png");
+  color: #ffffff;
+}
+
+.gift__info {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__text {
+  text-transform: uppercase;
+}
+
+.form__note {
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+}
+
+.form__button {
+  font-family: "Oswald", sans-serif;
+  padding: 7px 0 7px 0;
+}
+
+.questionary__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.questionary__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.questionary__label {
+  font-size: 16px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.questionary__input::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.control__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.control__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.control__name {
+  font-size: 16px;
+  color: #222222;
+}
+
+.comment__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.comment__input::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+/*Global*/
+/*Header*/
+/*Footer*/
+/*Index*/
+/*Catalog*/
+/*Form*/
+/*# sourceMappingURL=style.css.map */
