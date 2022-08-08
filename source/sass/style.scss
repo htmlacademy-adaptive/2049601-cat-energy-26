@@ -1,18 +1,16 @@
 /*Global*/
-@use "blocks/global/mixins.scss";
-@use "blocks/global/fonts.scss";
-@use "blocks/global/utils.scss";
+@use "mixins.scss";
+@use "fonts.scss";
+@use "utils.scss";
 @use "blocks/global/page.scss";
 @use "blocks/global/buttons.scss";
 @use "blocks/global/main-container.scss";
-@use "blocks/global/contacts.scss";
 @use "blocks/global/adress.scss";
 /*Header*/
 @use "blocks/header/main-header.scss";
 @use "blocks/header/main-menu.scss";
 @use "blocks/header/main-nav.scss";
 /*Footer*/
-@use "blocks/footer/main-footer.scss";
 @use "blocks/footer/social.scss";
 @use "blocks/footer/copyright.scss";
 /*Index*/
