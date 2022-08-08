@@ -70,7 +70,6 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
-
 .button--all {
   color: #444444;
   background-color: #f2f2f2;
@@ -103,6 +102,10 @@ a {
 }
 
 .main-menu__link {
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-top: 1px solid #e6e6e6;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
@@ -112,13 +115,6 @@ a {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.main-menu__link {
-  text-align: center;
-  padding-top: 22px;
-  padding-bottom: 24px;
-  border-top: 1px solid #e6e6e6;
 }
 
 .social__list {
@@ -255,6 +251,11 @@ a {
   line-height: 24px;
   text-transform: uppercase;
 }
+.result__number--price {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
 
 .result__description {
   font-family: "Arial", sans-serif;
@@ -262,13 +263,6 @@ a {
   font-size: 12px;
   line-height: 12px;
 }
-
-.result__number--price {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-}
-
 .result__description--price {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
