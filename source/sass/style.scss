@@ -1,1 +1,34 @@
-// Начните писать стили здесь
+/*Global*/
+@use "mixins.scss";
+@use "fonts.scss";
+@use "utils.scss";
+@use "blocks/global/page.scss";
+@use "blocks/global/buttons.scss";
+@use "blocks/global/main-container.scss";
+@use "blocks/global/adress.scss";
+/*Header*/
+@use "blocks/header/main-header.scss";
+@use "blocks/header/main-menu.scss";
+@use "blocks/header/main-nav.scss";
+/*Footer*/
+@use "blocks/footer/social.scss";
+@use "blocks/footer/copyright.scss";
+/*Index*/
+@use "blocks/index/program.scss";
+@use "blocks/index/categories.scss";
+@use "blocks/index/advantages.scss";
+@use "blocks/index/counters.scss";
+@use "blocks/index/result.scss";
+@use "blocks/index/slider.scss";
+/*Catalog*/
+@use "blocks/catalog/main-catalog.scss";
+@use "blocks/catalog/product.scss";
+@use "blocks/catalog/catalog-all.scss";
+@use "blocks/catalog/additional-catalog.scss";
+@use "blocks/catalog/product-add.scss";
+@use "blocks/catalog/gift.scss";
+/*Form*/
+@use "blocks/form/form.scss";
+@use "blocks/form/questionary.scss";
+@use "blocks/form/control.scss";
+@use "blocks/form/comment.scss";

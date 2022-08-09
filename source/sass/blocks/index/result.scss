@@ -1,0 +1,44 @@
+.result {
+  background-color: #eaeaea;
+}
+
+.result__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.result__list {
+  margin: 0;
+  padding: 0;
+}
+
+.result__text {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+.result__number {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  &--price {
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.result__description {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 12px;
+  line-height: 12px;
+
+  &--price {
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
