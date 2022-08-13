@@ -1,24 +1,83 @@
+@use "variables.scss" as v;
 
 .program {
-  padding: 27px 20px 0;
-  background-color: #68b738;
-  background-image: url("../img/background-index.png");
-  background-repeat: no-repeat;
+  position: relative;
+  padding: 0 20px;
+  text-align: center;
   color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 302px;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-image:linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/index-background-mobile.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 }
 
 .program__title {
+  margin: 0;
+  margin-bottom: 25px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 }
 
 .program__slogan {
+  margin: 0;
+  margin-bottom: 29px;
   line-height: 14px;
+  text-transform: uppercase;
 }
 
 .program__link {
   font-size: 14px;
   line-height: 18px;
   padding: 7px 0 7px 0;
+}
+
+@media (min-width: v.$tablet-width) {
+  .program {
+    text-align: start;
+    padding: 0 30px;
+  }
+
+  .program::after {
+    display: none;
+  }
+
+  .program__title,
+  .program__slogan {
+    color: #000000;
+  }
+
+  .program-img {
+    order: 0;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .program {
+    min-height: 694px;
+    padding: 0 110px;
+  }
+
+  .program::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 720px;
+    height: 694px;
+    left: 50%;
+    background-image:linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/index-background-desktop.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 }

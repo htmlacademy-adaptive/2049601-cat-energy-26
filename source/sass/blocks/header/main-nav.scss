@@ -1,3 +1,22 @@
+@use "variables.scss" as v;
+
+@media (min-width: v.$tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .main-nav__list {
+    width: 480px;
+  }
+}
 
 .main-nav__list {
   margin: 0;
