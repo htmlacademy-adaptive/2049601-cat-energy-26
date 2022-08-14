@@ -1,4 +1,7 @@
+@use "variables.scss" as v;
+
 .form__text {
+  padding: 0 20px 39px;
   text-transform: uppercase;
 }
 
@@ -10,4 +13,44 @@
 .form__button {
   font-family: "Oswald", sans-serif;
   padding: 7px 0 7px 0;
+}
+
+.form__questionary {
+  padding: 0 20px 24px;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.form__radio {
+  padding: 0 20px 20px;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+@media (min-width: v.$tablet-width) {
+  .form__text {
+    padding: 0 70px 66px;
+  }
+
+  .form__questionary {
+    padding: 0 70px 72px;
+    border: none;
+  }
+
+  .form__radio {
+    padding: 0 70px 71px;
+    border: 1px solid #d9d9d9;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .form__text {
+    padding: 0 110px 66px;
+  }
+
+  .form__wrapper-desctop {
+    max-width: 1220px;
+    display: flex;
+    padding: 0 110px 65px;
+  }
 }
