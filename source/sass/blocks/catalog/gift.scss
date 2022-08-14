@@ -1,11 +1,28 @@
+@use "variables.scss" as v;
+
 .gift {
-  background-color: #68b738;
-  background-image: url("../img/background-catalog.png");
-  color: #ffffff;
+  padding: 35px 20px;
 }
 
 .gift__info {
+  height: 290px;
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  background-color: #68b738;
+  background-image: url("../img/background-catalog.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #ffffff;
+}
+
+@media (min-width: v.$tablet-width) {
+  .gift {
+    padding: 69px 30px 76px;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+
 }

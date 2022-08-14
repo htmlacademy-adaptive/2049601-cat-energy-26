@@ -28,8 +28,14 @@
 }
 
 @media (min-width: v.$desktop-width) {
+  .contacts__wrapper {
+    padding: 56px 80px;
+    position: absolute;
+    background-color: #ffffff;
+  }
+
   .contacts__adress {
-    display: none;
+    width: 405px;
   }
 }
 
