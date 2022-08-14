@@ -58,6 +58,10 @@
 }
 
 @media (min-width: v.$desktop-width) {
+  .categories {
+    padding: 82px 110px 71px;
+  }
+
   .categories__list {
     grid-template-columns: repeat(2, 570px);
     gap: 80px;

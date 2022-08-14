@@ -1,6 +1,20 @@
+@use "variables.scss" as v;
+
+.copyright {
+  max-width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .copyright___link-text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+}
+
+@media (min-width: v.$tablet-width) {
+  .copyright {
+    max-width: 163px;
+  }
 }

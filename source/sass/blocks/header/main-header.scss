@@ -1,9 +1,22 @@
 @use "variables.scss" as v;
 
 .main-header {
+  padding: 10px 20px 18px;
   display: flex;
   flex-direction: column;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+}
+
+@media (min-width: v.$tablet-width) {
+  .main-header {
+    padding: 24px 30px 65px;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .main-header {
+    padding: 53px 110px 32px;
+  }
 }

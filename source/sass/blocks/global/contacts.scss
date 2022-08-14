@@ -1,0 +1,35 @@
+@use "variables.scss" as v;
+
+.contacts__wrapper {
+  padding: 26px 20px;
+}
+
+.contacts__adress {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__map {
+  min-width: 320px;
+  min-height: 320px;
+  background-color: #eaeaea;
+  background-image: url("../img/map.png");
+}
+
+@media (min-width: v.$tablet-width) {
+  .contacts__wrapper {
+    padding: 56px 70px;
+  }
+
+  .contacts__adress {
+    width: 628px;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .contacts__adress {
+    display: none;
+  }
+}
+

@@ -1,3 +1,5 @@
+@use "variables.scss" as v;
+
 .advantages {
   padding: 0 20px;
 }
@@ -24,4 +26,28 @@
 
 .advantages__item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+@media (min-width: v.$tablet-width) {
+  .advantages {
+    padding: 0 30px 47px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 249px;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .advantages {
+    padding: 0 110px 126px;
+    border-bottom: none;
+  }
 }
