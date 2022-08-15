@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/2049601-cat-energy-26/4/">
+</head>
+
+<body class="page__body">
+  <!-- Header -->
+  <header class="main-header container">
+    <!-- Logo -->
+    <div class="main-header__logo logo">
+      <a class="logo__img" href="index.html">
+        <span class="visually-hidden">Логотип</span>
+        <svg class="logo__icon" aria-hidden="true" focusable="false" width="34" height="38" viewBox="0 0 34 38"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#a)">
+            <path
+              d="M6.07 20.72v-2.26c6.68-.92 13.42-1.36 20.17-1.33 0 .6 0 1.21-.06 1.82a25.52 25.52 0 0 1 6-1.82A16.67 16.67 0 0 0 .19 20.39l5.88.33ZM27.24 24.23c-1.16 1.28-1.39 1.2-1.39 3.45v9.18A16.64 16.64 0 0 0 33.32 23a17.3 17.3 0 0 0-.32-3.1 33.1 33.1 0 0 0-5.76 4.33ZM6.36 25.72s-3.79-1.44-5.19-1.83A8.54 8.54 0 0 0 0 23.61a16.65 16.65 0 0 0 8.68 14L6.36 25.72Z"
+              fill="#FDC305" />
+            <path
+              d="M26.29 17.12A89.8 89.8 0 0 0 24.89.65S24.75-.64 24 .41c-.59 1.25-1 2.58-1.2 3.94a70.34 70.34 0 0 0-12.77.34C9.24 2 7.85.75 7.18 1c-.67.25-.72 3.31-.72 3.31l-.33 14.1c6.68-.9 13.42-1.34 20.16-1.29Z"
+              fill="#F06351" />
+            <path
+              d="M12.41 14c0-.09 1 .68 1.41.92.41.24.61.42.61.59 0 .17-.27.34-.63.34s-.91-.12-1-.27h1.23A8.34 8.34 0 0 1 12.41 14ZM19.89 14.11l-1.09 1.33c0 .06-.17.35.18.3.41-.06.82-.16 1.22-.29.11 0 .07-.19-.11-.17-.18.02-.69.05-1 .11l.84-1.26s.07-.13-.04-.02ZM16.75 20.2c.46-.2.85-.56 1.09-1 .28-.65 0-.91-.44-1-.6-.11-1.22.01-1.74.34-.39.36-.34.72-.05 1 .35.27.73.49 1.14.66Z"
+              fill="#000" />
+            <path
+              d="M16.35 21.45c-.11.23-.27.43-.46.6-.28.23-.63.36-1 .38a2.15 2.15 0 0 1-1.47-.43 2.3 2.3 0 0 1-.53-.44c-.1-.11-.22-.2-.36-.26 0 0 .75 4.1 2.57 4.75 1.82.65 2.14-.75 2.2-1.13a5.61 5.61 0 0 0-.82-3.23c-.02-.31-.03-.11-.13-.24Z"
+              fill="#F06351" />
+            <path
+              d="M14.71 22.59a3.44 3.44 0 0 1-2.36-1.47.14.14 0 0 1 .03-.15.14.14 0 0 1 .2 0c.5.7 1.26 1.16 2.11 1.3a2.1 2.1 0 0 0 1.63-1l.14-.19.1.21s.37.76 1 .8c.63.04 1.05-.41 1.61-1.28a.14.14 0 0 1 .2 0 .15.15 0 0 1 .05.2c-.64 1-1.27 1.44-1.88 1.4a1.55 1.55 0 0 1-1.12-.76 2.26 2.26 0 0 1-1.71.94Z"
+              fill="#000" />
+            <path
+              d="M26.24 18.92a58.63 58.63 0 0 0-5.07 5.19A31.63 31.63 0 0 1 15.88 29c-.22-.53-1.62-1.51-1.62-1.51s-3.13-2.14-5.18-3.82a34.14 34.14 0 0 1-3.13-3l-2-.11c2.89 4.2 7.12 7.3 12 8.8.86-.14 3.27-1.86 5.07-3.26a58.13 58.13 0 0 0 5.94-5.89c.5-.59.89-1.27 1.14-2-1.1.39-1.86.71-1.86.71Z"
+              fill="#F06351" />
+          </g>
+          <defs>
+            <path fill="#fff" d="M0 0h33.32v37.61H0z" />
+          </defs>
+        </svg>
+      </a>
+      <a class="logo__text" href="index.html">
+        <span class="visually-hidden">Магазин Кэт энерджи</span>
+        <svg class="logo__icon-text" aria-hidden="true" focusable="false" width="101" height="18" viewBox="0 0 101 18"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#a)" fill="#111">
+            <path
+              d="M1.26 16.54A6.86 6.86 0 0 1 0 12.24v-6.4C-.1 4.3.3 2.77 1.19 1.47 2.05.46 3.39 0 5.37 0 7.35 0 8.61.46 9.4 1.3a5.42 5.42 0 0 1 1.19 3.78v1.54H6.72V4.85a3.7 3.7 0 0 0-.24-1.54 1.16 1.16 0 0 0-1.1-.62c-.56 0-.95.16-1.11.54a4.85 4.85 0 0 0-.24 1.7v8.22c-.04.56.07 1.12.32 1.62.15.38.55.54 1.1.54.56 0 .87-.16 1.03-.54.18-.52.26-1.07.24-1.62v-1.84h3.87v1.54a5.77 5.77 0 0 1-1.19 3.84c-.79.93-2.13 1.39-4.03 1.39-1.9-.08-3.32-.54-4.1-1.54ZM15.25.23h4.5l3.33 17.54h-3.64l-.63-3.7h-2.6l-.64 3.7h-3.72L15.25.23Zm3.24 11.54-.95-6.85-.94 6.85h1.9ZM25.84 3.15h-2.68V.23h9.4v2.85h-2.69v14.69h-4.03V3.15ZM39.75.23h6.96v1.85h-4.5v5.77h3.63v1.77H42.2v6.46h4.5v1.77h-7.03V.23h.08ZM48.76.23h1.74l5.14 11.62V.23h2.05v17.54h-1.58l-5.21-12v12h-2.14V.23ZM60.06.23h6.96v1.85h-4.5v5.77h3.63v1.77H62.5v6.46h4.5v1.77h-6.95V.23ZM69.07.23h3.64c1.43-.1 2.85.28 4.03 1.08C77.6 2 78 3.23 78 4.85c0 2.23-.7 3.61-2.21 4.07l2.53 8.77h-2.45L73.5 9.46h-1.98v8.23H69V.23h.08Zm3.48 7.54c.81.06 1.63-.15 2.3-.62.47-.38.7-1.15.7-2.3a4.85 4.85 0 0 0-.23-1.7c-.18-.39-.49-.71-.87-.92a3.69 3.69 0 0 0-1.74-.3h-1.1v5.76h.94v.08ZM81.16 16.46a7.61 7.61 0 0 1-1.1-4.46V6.15c-.02-1.11.11-2.22.4-3.3.26-.81.78-1.51 1.5-2 .88-.51 1.9-.75 2.92-.7 1.66 0 2.84.39 3.55 1.23a5.77 5.77 0 0 1 1.11 3.85v.62h-2.37V5.3c0-.65-.05-1.29-.16-1.93-.06-.4-.3-.76-.63-1a2.5 2.5 0 0 0-1.5-.38 2.42 2.42 0 0 0-1.58.46 1.75 1.75 0 0 0-.63 1.23c-.1.69-.16 1.38-.16 2.08v6.54c-.06 1 .1 2 .47 2.92.32.62.95.85 1.9.85a1.96 1.96 0 0 0 1.9-.93c.41-.97.6-2.02.55-3.07v-1.23h-2.3V9.08h4.59v8.69h-1.58l-.24-2c-.2.67-.64 1.25-1.22 1.66-.6.4-1.3.6-2.02.57a4.05 4.05 0 0 1-3.4-1.54ZM94.68 11.62 90.8.3h2.37l2.76 8.46L98.63.3H101l-3.87 11.3v6.16h-2.37v-6.15h-.08Z" />
+          </g>
+          <defs>
+            <path fill="#fff" d="M0 0h101v18H0z" />
+          </defs>
+        </svg>
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="main-header__nav main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list main-nav__list--closed main-menu">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-menu__item main-menu__item--current">
+          <a class="main-menu__link">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Main -->
+  <main class="main-container">
+    <h1 class="main-container__title main-container__title-form container">
+      Подбор программы
+    </h1>
+    <!-- Form -->
+    <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+      <p class="form__text container">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+      <!-- Questionary -->
+      <div class="form__wrapper-desctop container">
+        <fieldset class="form__questionary questionary container">
+          <h2 class="visually-hidden">Данные о коте</h2>
+          <ul class="questionary__list">
+            <li class="questionary__item">
+              <label class="questionary__label" for="name">Имя:*</label>
+              <input class="questionary__input" type="text" id="name" name="name" placeholder="Барсик" required>
+            </li>
+            <li class="questionary__item">
+              <label class="questionary__label" for="weight">Вес(кг):*</label>
+              <input class="questionary__input" type="text" id="weight" name="weight" placeholder="7" required>
+            </li>
+            <li class="questionary__item">
+              <label class="questionary__label" for="years">Возраст(лет):*</label>
+              <input class="questionary__input" type="text" id="years" name="years" placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
+        <!-- Programm -->
+        <fieldset class="form__radio control container">
+          <h2 class="visually-hidden">Выбор программы питания</h2>
+          <ul class="control__list">
+            <li class="control__item">
+              <label class="control__label">
+                <input class="control__input" type="radio" name="programm" value="slim" checked>
+                <span class="control__name">Похудение</span>
+              </label>
+            </li>
+            <li class="control__item">
+              <label class="control__label">
+                <input class="control__input" type="radio" name="programm" value="pro">
+                <span class="control__name">Набор массы</span>
+              </label>
+            </li>
+            <li class="control__item">
+              <label class="control__label">
+                <input class="control__input" type="radio" name="programm" value="unknown">
+                <span class="control__name">Не знаю (нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <!-- Questionary -->
+      <fieldset class="form__questionary form__questionary--contacts questionary container">
+        <h2 class="questionary__title">Контактные данные
+          (владельца кота)</h2>
+        <ul class="questionary__list questionary__list--contacts">
+          <li class="questionary__item">
+            <label class="questionary__label" for="email">E-mail:*</label>
+            <input class="questionary__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
+              required>
+          </li>
+          <li class="questionary__item">
+            <label class="questionary__label" for="tel">Телефон:*</label>
+            <input class="questionary__input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- Comment -->
+      <fieldset class="form__comment comment container">
+        <h2 class="comment__title">Комментарий</h2>
+        <label class="comment__label" for="comment-field"></label>
+        <textarea class="comment__input" name="comment-field" id="comment-field"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
+      </fieldset>
+      <!-- Additionally -->
+      <fieldset class="form__checkbox control container">
+        <h2 class="control__title">Дополнительно</h2>
+        <ul class="control__list control__list--checkbox">
+          <li class="control__item">
+            <label class="control__label">
+              <input class="control__input" type="checkbox" name="sweetener" checked>
+              <span class="control__name">Сахарозаменитель</span>
+            </label>
+          </li>
+          <li class="control__item">
+            <label class="control__label">
+              <input class="control__input" type="checkbox" name="water">
+              <span class="control__name">Питьевая вода</span>
+            </label>
+          </li>
+          <li class="control__item">
+            <label class="control__label">
+              <input class="control__input" type="checkbox" name="milk">
+              <span class="control__name">Молоко</span>
+            </label>
+          </li>
+          <li class="control__item">
+            <label class="control__label">
+              <input class="control__input" type="checkbox" name="vitamins">
+              <span class="control__name">Витамины</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- Submit -->
+      <div class="form__wrapper-button container">
+        <button class="form__button button" type="submit">
+          Отправить заявку
+        </button>
+        <p class="form__note">
+          * — Обязательные поля
+        </p>
+      </div>
+    </form>
+    <!-- Contacts -->
+    <section class="contacts container">
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">
+          Контактная информация
+        </h2>
+        <div class="contacts__adress adress">
+          <p class="adress__welcome">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+          <p class="adress__text">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
+      </div>
+      <div class="contacts__map">
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="main-footer container">
+    <div class="main-footer__wrapper">
+      <!-- Logo -->
+      <a class="main-footer__link" href="index.html">
+        <span class="visually-hidden">Магазин Кэт энерджи</span>
+        <svg class="logo-text" aria-hidden="true" focusable="false" width="128" height="24" viewBox="0 0 101 18"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#a)" fill="#111">
+            <path
+              d="M1.26 16.54A6.86 6.86 0 0 1 0 12.24v-6.4C-.1 4.3.3 2.77 1.19 1.47 2.05.46 3.39 0 5.37 0 7.35 0 8.61.46 9.4 1.3a5.42 5.42 0 0 1 1.19 3.78v1.54H6.72V4.85a3.7 3.7 0 0 0-.24-1.54 1.16 1.16 0 0 0-1.1-.62c-.56 0-.95.16-1.11.54a4.85 4.85 0 0 0-.24 1.7v8.22c-.04.56.07 1.12.32 1.62.15.38.55.54 1.1.54.56 0 .87-.16 1.03-.54.18-.52.26-1.07.24-1.62v-1.84h3.87v1.54a5.77 5.77 0 0 1-1.19 3.84c-.79.93-2.13 1.39-4.03 1.39-1.9-.08-3.32-.54-4.1-1.54ZM15.25.23h4.5l3.33 17.54h-3.64l-.63-3.7h-2.6l-.64 3.7h-3.72L15.25.23Zm3.24 11.54-.95-6.85-.94 6.85h1.9ZM25.84 3.15h-2.68V.23h9.4v2.85h-2.69v14.69h-4.03V3.15ZM39.75.23h6.96v1.85h-4.5v5.77h3.63v1.77H42.2v6.46h4.5v1.77h-7.03V.23h.08ZM48.76.23h1.74l5.14 11.62V.23h2.05v17.54h-1.58l-5.21-12v12h-2.14V.23ZM60.06.23h6.96v1.85h-4.5v5.77h3.63v1.77H62.5v6.46h4.5v1.77h-6.95V.23ZM69.07.23h3.64c1.43-.1 2.85.28 4.03 1.08C77.6 2 78 3.23 78 4.85c0 2.23-.7 3.61-2.21 4.07l2.53 8.77h-2.45L73.5 9.46h-1.98v8.23H69V.23h.08Zm3.48 7.54c.81.06 1.63-.15 2.3-.62.47-.38.7-1.15.7-2.3a4.85 4.85 0 0 0-.23-1.7c-.18-.39-.49-.71-.87-.92a3.69 3.69 0 0 0-1.74-.3h-1.1v5.76h.94v.08ZM81.16 16.46a7.61 7.61 0 0 1-1.1-4.46V6.15c-.02-1.11.11-2.22.4-3.3.26-.81.78-1.51 1.5-2 .88-.51 1.9-.75 2.92-.7 1.66 0 2.84.39 3.55 1.23a5.77 5.77 0 0 1 1.11 3.85v.62h-2.37V5.3c0-.65-.05-1.29-.16-1.93-.06-.4-.3-.76-.63-1a2.5 2.5 0 0 0-1.5-.38 2.42 2.42 0 0 0-1.58.46 1.75 1.75 0 0 0-.63 1.23c-.1.69-.16 1.38-.16 2.08v6.54c-.06 1 .1 2 .47 2.92.32.62.95.85 1.9.85a1.96 1.96 0 0 0 1.9-.93c.41-.97.6-2.02.55-3.07v-1.23h-2.3V9.08h4.59v8.69h-1.58l-.24-2c-.2.67-.64 1.25-1.22 1.66-.6.4-1.3.6-2.02.57a4.05 4.05 0 0 1-3.4-1.54ZM94.68 11.62 90.8.3h2.37l2.76 8.46L98.63.3H101l-3.87 11.3v6.16h-2.37v-6.15h-.08Z" />
+          </g>
+          <defs>
+
+            <path fill="#fff" d="M0 0h101v18H0z" />
+
+          </defs>
+        </svg>
+      </a>
+      <!-- Social -->
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">
+                Социальная сеть ВКонтакте
+              </span>
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="28" height="22" viewBox="0 0 28 22"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 5.34c0-.86.52-1.32 1.55-1.38l3.97.02c.26 0 .44.13.53.38.4 1.26.86 2.34 1.37 3.25.5.92 1.17 1.97 1.99 3.16.07.15.18.23.34.23.13 0 .22-.06.3-.18l.07-.28.03-4.35c0-.3-.07-.5-.23-.6-.15-.1-.43-.18-.83-.23-.32-.05-.48-.23-.48-.55 0-.07 0-.12.02-.15.38-1.09 1.44-1.63 3.2-1.63l1.5-.03c.67 0 1.23.16 1.67.48.44.32.67.82.67 1.5v5.72c.12.08.24.12.34.12.27 0 .5-.15.7-.45 1.95-2.58 3-4.31 3.17-5.18 0-.02.01-.06.05-.13.12-.25.33-.47.61-.65.29-.19.53-.31.75-.38a.55.55 0 0 1 .24-.05h4.13l.26.03c.36 0 .63.16.83.47.07.1.12.21.15.33a2.4 2.4 0 0 1 .06.55v.18a6.11 6.11 0 0 1-.94 2.2c-.5.78-1.15 1.62-1.93 2.53-.79.9-1.27 1.5-1.47 1.78-.16.2-.24.39-.24.56 0 .13.07.28.21.45l3.9 4.63c.2.26.31.56.31.88 0 .38-.16.7-.48.95-.32.25-.7.4-1.14.43l-.46.02h-4.04c-.02 0-.06 0-.11.02a.86.86 0 0 1-.1.01c-.4 0-.76-.16-1.1-.48-.12-.13-.96-1.12-2.5-2.97a1.39 1.39 0 0 0-.38-.32 38.47 38.47 0 0 0-.53 2.24l-.08.42a1.4 1.4 0 0 1-1.12 1.06l-.37.02h-2.61c-1.48 0-2.95-.63-4.41-1.9a19.3 19.3 0 0 1-3.96-4.95 47.51 47.51 0 0 1-3.28-7.05A1.92 1.92 0 0 1 1 5.34Zm16.01 6.51c-.37 0-.7-.1-1.01-.29a.9.9 0 0 1-.45-.79V5c0-.34-.1-.58-.27-.72-.18-.14-.49-.21-.93-.21l-1.52.05c-.76 0-1.34.12-1.73.37.78.36 1.17.93 1.17 1.71v4.43a1.5 1.5 0 0 1-.53 1.04c-.32.28-.68.42-1.07.42-.53 0-.94-.24-1.22-.73a26.16 26.16 0 0 1-3.1-5.63l-.23-.66-3.55-.02c-.23 0-.36.01-.38.03-.03.03-.04.1-.04.22 0 .15.01.3.05.48l.56 1.4c1.49 3.64 3.11 6.51 4.86 8.6 1.75 2.1 3.47 3.15 5.16 3.15h2.66c.1 0 .19-.03.24-.09.05-.06.1-.17.13-.34l.06-.25.5-2.21c.15-.3.27-.5.38-.6.2-.2.42-.28.69-.28.43 0 .86.24 1.3.73l2.27 2.71c.14.22.3.33.45.33h4.4c.53 0 .8-.13.8-.38a.47.47 0 0 0-.08-.25l-3.87-4.55c-.3-.35-.45-.73-.45-1.13 0-.4.14-.8.43-1.16.23-.34.68-.9 1.34-1.67.67-.78 1.25-1.51 1.75-2.19.5-.68.82-1.3.98-1.85l.08-.33a.37.37 0 0 1-.02-.16c0-.07-.01-.14-.03-.19h-4.18c-.27.1-.48.25-.64.45L21.8 6c-.45 1.16-1.6 2.94-3.5 5.36-.36.33-.8.5-1.3.5Z"
+                  fill="#666" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">
+                Видеохостинг YouTube
+              </span>
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="24" height="19" viewBox="0 0 24 19"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m15.85 8.8-5.24-3.5a.65.65 0 0 0-1.01.55v6.98a.65.65 0 0 0 1.01.54l5.24-3.49a.65.65 0 0 0 0-1.09Zm-4.94 2.8V7.08l3.4 2.27-3.4 2.27Zm12.48-8.56a2.4 2.4 0 0 0-1.45-1.63C18.22-.02 12.25 0 12 0S5.78-.02 2.06 1.4A2.4 2.4 0 0 0 .61 3.05 25.32 25.32 0 0 0 0 9.34c0 3.26.33 5.22.61 6.3a2.4 2.4 0 0 0 1.45 1.63c3.72 1.43 9.69 1.4 9.94 1.4h.08c.75 0 6.31-.04 9.86-1.4a2.4 2.4 0 0 0 1.45-1.64c.28-1.07.61-3.03.61-6.3 0-3.25-.33-5.22-.61-6.29Zm-1.27 12.27a1.1 1.1 0 0 1-.65.74c-3.5 1.34-9.4 1.32-9.47 1.32-.07 0-5.98.02-9.47-1.32a1.09 1.09 0 0 1-.65-.74c-.27-1-.57-2.85-.57-5.97 0-3.12.3-4.97.57-5.97a1.1 1.1 0 0 1 .65-.74C6.03 1.29 11.93 1.3 12 1.3c.07 0 5.98-.02 9.47 1.32a1.1 1.1 0 0 1 .65.74c.27 1 .57 2.85.57 5.97 0 3.12-.3 4.96-.57 5.97Z"
+                  fill="#666" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">
+                Мессенджер Telegram
+              </span>
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="18" viewBox="0 0 20 18"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M19.46.15c.18.15.27.38.23.61l-2.63 15.76a.66.66 0 0 1-1.01.44l-7.88-5.25a.66.66 0 0 1-.15-.96l2.61-3.26-4.36 2.9a.66.66 0 0 1-.65.05L.36 7.8a.66.66 0 0 1 .08-1.2L18.82.03a.66.66 0 0 1 .64.11ZM2.33 7.32 5.86 9.1l7.56-5.04a.66.66 0 0 1 .88.96l-4.8 6 6.43 4.3 2.28-13.66L2.33 7.32Z"
+                  fill="#666" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Copyright -->
+      <div class="main-footer__copyright copyright">
+        <a class="copyright___link-text" href="https://htmlacademy.ru/">HTML Academy</a>
+        <a class="copyright___link-logo" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">
+            Переход на сайт HTML Academy
+          </span>
+          <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"
+              fill="#666" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
