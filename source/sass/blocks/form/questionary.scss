@@ -1,3 +1,5 @@
+@use "variables.scss" as v;
+
 .questionary__title {
   font-weight: 400;
   font-size: 24px;
@@ -22,4 +24,10 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+}
+
+@media (min-width: v.$desktop-width) {
+  .questionary__list--contacts {
+    display: flex;
+  }
 }

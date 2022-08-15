@@ -86,7 +86,7 @@
       <!-- Questionary -->
       <div class="form__wrapper-desctop container">
         <fieldset class="form__questionary questionary container">
-          <legend class="visually-hidden">Данные о коте</legend>
+          <h2 class="visually-hidden">Данные о коте</h2>
           <ul class="questionary__list">
             <li class="questionary__item">
               <label class="questionary__label" for="name">Имя:*</label>
@@ -104,7 +104,7 @@
         </fieldset>
         <!-- Programm -->
         <fieldset class="form__radio control container">
-          <legend class="visually-hidden">Выбор программы питания</legend>
+          <h2 class="visually-hidden">Выбор программы питания</h2>
           <ul class="control__list">
             <li class="control__item">
               <label class="control__label">
@@ -128,10 +128,10 @@
         </fieldset>
       </div>
       <!-- Questionary -->
-      <fieldset class="form__questionary questionary container">
-        <legend class="questionary__title">Контактные данные
-          (владельца кота)</legend>
-        <ul class="questionary__list">
+      <fieldset class="form__questionary form__questionary--contacts questionary container">
+        <h2 class="questionary__title">Контактные данные
+          (владельца кота)</h2>
+        <ul class="questionary__list questionary__list--contacts">
           <li class="questionary__item">
             <label class="questionary__label" for="email">E-mail:*</label>
             <input class="questionary__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
@@ -145,15 +145,15 @@
       </fieldset>
       <!-- Comment -->
       <fieldset class="form__comment comment container">
-        <legend class="comment__title">Комментарий</legend>
+        <h2 class="comment__title">Комментарий</h2>
         <label class="comment__label" for="comment-field"></label>
-        <textarea class="comment__input" name="comment-field" id="comment-field" cols="30" rows="10"
+        <textarea class="comment__input" name="comment-field" id="comment-field"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <!-- Additionally -->
       <fieldset class="form__checkbox control container">
-        <legend class="control__title">Дополнительно</legend>
-        <ul class="control__list">
+        <h2 class="control__title">Дополнительно</h2>
+        <ul class="control__list control__list--checkbox">
           <li class="control__item">
             <label class="control__label">
               <input class="control__input" type="checkbox" name="sweetener" checked>
@@ -181,12 +181,14 @@
         </ul>
       </fieldset>
       <!-- Submit -->
-      <button class="form__button button" type="submit">
-        Отправить заявку
-      </button>
-      <p class="form__note">
-        * — Обязательные поля
-      </p>
+      <div class="form__wrapper-button container">
+        <button class="form__button button" type="submit">
+          Отправить заявку
+        </button>
+        <p class="form__note">
+          * — Обязательные поля
+        </p>
+      </div>
     </form>
     <!-- Contacts -->
     <section class="contacts container">
