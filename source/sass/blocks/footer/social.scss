@@ -18,3 +18,9 @@
 .social__item:not(:last-child) {
   margin-right: 24px;
 }
+
+@media (min-width: v.$tablet-width) {
+  .social__list {
+    border: none;
+  }
+}

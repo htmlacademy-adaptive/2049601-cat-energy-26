@@ -1,5 +1,9 @@
 @use "variables.scss" as v;
 
+.contacts--background {
+  background-color: #f2f2f2;
+}
+
 .contacts__wrapper {
   padding: 26px 20px;
 }
@@ -28,6 +32,10 @@
 }
 
 @media (min-width: v.$desktop-width) {
+  .contacts--background {
+    background-color: #ffffff;
+  }
+
   .contacts__wrapper {
     padding: 56px 80px;
     position: absolute;
