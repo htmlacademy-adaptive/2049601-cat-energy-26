@@ -1,3 +1,5 @@
+@use "variables.scss" as v;
+
 .product-add {
   padding: 13px 20px 19px;
   border-top: 1px solid #ebebeb;
@@ -21,4 +23,10 @@
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+}
+
+@media (min-width: v.$tablet-width) {
+  .product-add {
+    border: 1px solid #cdcdcd;;
+}
 }

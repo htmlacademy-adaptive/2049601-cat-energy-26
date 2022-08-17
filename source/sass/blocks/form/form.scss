@@ -76,13 +76,6 @@
     padding: 0 110px 56px;
   }
 
-  .control__list--checkbox {
-    display: grid;
-    grid-template-columns: repeat(2, 221px);
-    row-gap: 23px;
-    column-gap: 123px;
-  }
-
   .form__wrapper-button {
     padding: 0 110px 72px;
     display: flex;
@@ -96,7 +89,6 @@
   }
 
   .form__wrapper-desctop {
-    max-width: 1220px;
     display: flex;
     padding: 0 110px;
   }
@@ -107,10 +99,5 @@
 
   .form__comment {
     padding: 0 110px 67px;
-  }
-
-  .control__list--checkbox {
-    display: flex;
-    max-width: 1196px;
   }
 }
