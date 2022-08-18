@@ -1,3 +1,5 @@
+@use "variables.scss" as v;
+
 .main-menu__link {
   text-align: center;
   padding-top: 22px;
@@ -5,4 +7,19 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+  border-top: 1px solid #e6e6e6;
+}
+
+.main-menu__item:last-of-type .main-menu__link {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+@media (min-width: v.$tablet-width) {
+  .main-menu__link {
+    border: none;
+  }
+
+  .main-menu__item:last-of-type .main-menu__link {
+    border: none;
+  }
 }

@@ -11,26 +11,10 @@
   line-height: 20px;
 }
 
-.main-menu__link {
-  border-top: 1px solid #e6e6e6;
-}
-
-.main-menu__item:last-of-type .main-menu__link {
-  border-bottom: 1px solid #d9d9d9;
-}
-
 @media (min-width: v.$tablet-width) {
   .main-header {
     width: 768px;
     padding: 24px 30px 65px;
-    border: none;
-  }
-
-  .main-menu__link {
-    border: none;
-  }
-
-  .main-menu__item:last-of-type .main-menu__link {
     border: none;
   }
 }

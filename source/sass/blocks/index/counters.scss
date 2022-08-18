@@ -2,7 +2,10 @@
   counter-reset: section;
 }
 
-.counters__item::before {
+.counters__item {
   counter-increment: section;
-  content: counter(section);
+
+  &::after {
+    content: counter(section);
+  }
 }
