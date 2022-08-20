@@ -1,5 +1,27 @@
+@use "variables.scss" as v;
+
 .main-header {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  display: flex;
+  flex-direction: column;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+}
+
+@media (min-width: v.$tablet-width) {
+  .main-header {
+    width: 768px;
+    padding: 24px 30px 65px;
+    border: none;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .main-header {
+    width: 1440px;
+    padding: 53px 110px 32px;
+  }
 }

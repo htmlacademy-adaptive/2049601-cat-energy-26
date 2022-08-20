@@ -1,4 +1,8 @@
+@use "variables.scss" as v;
+
 .additional-catalog__title {
+  padding: 25px 20px 36px;
+  margin: 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -8,4 +12,22 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+@media (min-width: v.$tablet-width) {
+  .additional-catalog__title {
+    padding: 68px 30px 80px;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .additional-catalog__title {
+    padding: 76px 110px 80px;
+  }
+
+  .additional-catalog__item {
+    width: 896px;
+    display: flex;
+    justify-content: space-between;
+  }
 }

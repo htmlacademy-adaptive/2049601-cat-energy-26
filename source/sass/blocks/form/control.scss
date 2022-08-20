@@ -1,3 +1,5 @@
+@use "variables.scss" as v;
+
 .control__title {
   font-weight: 400;
   font-size: 24px;
@@ -13,4 +15,20 @@
 .control__name {
   font-size: 16px;
   color: #222222;
+}
+
+@media (min-width: v.$tablet-width) {
+  .control__list--checkbox {
+    display: grid;
+    grid-template-columns: repeat(2, 221px);
+    row-gap: 23px;
+    column-gap: 123px;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .control__list--checkbox {
+    display: flex;
+    max-width: 1196px;
+  }
 }

@@ -1,3 +1,5 @@
+@use "variables.scss" as v;
+
 .page {
   height: 100%;
   font-family: "Oswald", sans-serif;
@@ -8,8 +10,10 @@
 }
 
 .page__body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
-  margin: 0;
   color: #000000;
   background-color: #ffffff;
 }

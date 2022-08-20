@@ -1,0 +1,31 @@
+@use "variables.scss" as v;
+
+.main-footer {
+  padding: 22px 20px;
+}
+
+.main-footer__link {
+  text-align: center;
+}
+
+@media (min-width: v.$tablet-width) {
+  .main-footer {
+    padding: 58px 30px 55px;
+  }
+
+  .main-footer__wrapper {
+    max-width: 708px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .main-footer {
+    padding: 57px 110px 58px;
+  }
+
+  .main-footer__wrapper {
+    max-width: 1220px;
+  }
+}

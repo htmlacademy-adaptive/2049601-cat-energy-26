@@ -1,13 +1,27 @@
+@use "variables.scss" as v;
+
 .comment__title {
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
 }
 
-.comment__input::placeholder {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
-  text-transform: uppercase;
+.comment__input {
+  min-height: 150px;
+  width: 100%;
+  border-color: #e7e7e7;
+
+  &::placeholder {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: v.$tablet-width) {
+  .comment__input {
+    min-height: 174px;
+  }
 }

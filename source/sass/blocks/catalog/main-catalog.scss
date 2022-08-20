@@ -1,5 +1,38 @@
+@use "variables.scss" as v;
+
 .main-catalog__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+@media (min-width: v.$tablet-width) {
+  .main-catalog {
+    padding: 0 30px 68px;
+  }
+
+  .main-catalog__list {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .main-catalog {
+    padding: 0 110px 76px;
+  }
+
+  .main-catalog__list {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 63px;
+    row-gap: 80px;
+  }
+
+  .main-catalog__wrapper-desctop {
+    padding: 0 110px 86px;
+    display: flex;
+    justify-content: space-between;
+  }
 }

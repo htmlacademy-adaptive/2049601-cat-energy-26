@@ -1,6 +1,26 @@
+@use "variables.scss" as v;
+
 .social__list {
+  max-width: 132px;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   border: 1px solid #d9d9d9;
+}
+
+.social__item {
+  min-width: 28px;
+  min-height: 22px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+@media (min-width: v.$tablet-width) {
+  .social__list {
+    border: none;
+  }
 }

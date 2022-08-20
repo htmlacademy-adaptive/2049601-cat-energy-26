@@ -1,0 +1,19 @@
+@use "variables.scss" as v;
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: v.$tablet-width) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .container {
+    width: 1440px;
+  }
+}
