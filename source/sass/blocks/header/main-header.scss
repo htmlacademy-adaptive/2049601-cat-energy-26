@@ -1,9 +1,8 @@
 @use "variables.scss" as v;
 
 .main-header {
+  position: relative;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 18px;
   display: flex;
   flex-direction: column;
   font-weight: 500;

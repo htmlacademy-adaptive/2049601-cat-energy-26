@@ -2,9 +2,12 @@
 
 .logo {
   display: flex;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0 20px;
   justify-content: space-between;
   width: 190px;
+  height: 65px;
+  align-items: center;
 }
 
 @media (min-width: v.$tablet-width) {

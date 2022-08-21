@@ -1,9 +1,69 @@
 @use "variables.scss" as v;
 
+.main-nav__toggle {
+  position: absolute;
+  width: 64px;
+  height: 65px;
+  padding: 0;
+  top: 0;
+  right: 46px;
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 24px;
+  left: 20px;
+  right: 20px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 22px;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-menu__item {
+  display: block;
+}
+
+@media (max-width: v.$mobile-width-only) {
+  .main-nav--closed .main-menu__item {
+    display: none;
+  }
 }
 
 @media (min-width: v.$tablet-width) {
