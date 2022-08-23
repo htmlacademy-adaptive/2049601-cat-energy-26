@@ -64,6 +64,12 @@
   .main-nav--closed .main-menu__item {
     display: none;
   }
+
+  .main-nav--opened .main-nav__list {
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+  }
 }
 
 @media (min-width: v.$tablet-width) {
@@ -80,6 +86,6 @@
 
 @media (min-width: v.$desktop-width) {
   .main-nav__list {
-    width: 480px;
+    width: 485px;
   }
 }

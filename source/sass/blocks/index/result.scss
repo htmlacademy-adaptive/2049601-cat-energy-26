@@ -1,11 +1,17 @@
 @use "variables.scss" as v;
 
 .result {
-  padding: 25px 20px 40px;
+  width: 100%;
   background-color: #eaeaea;
 }
 
+.result__wrapper {
+  padding: 25px 20px 40px;
+}
+
 .result__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -20,13 +26,19 @@
 }
 
 .result__text {
+  margin: 0;
+  margin-bottom: 20px;
   font-family: "Arial", sans-serif;
   color: #444444;
 }
 
 .result__item {
+  width: 124px;
+  position: relative;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  text-align: center;
+  padding: 15px 0 18px;
 }
 
 .result__number {
@@ -36,17 +48,23 @@
 }
 
 .result__description {
+  padding: 0 14px 0;
   margin: 0;
+  position: absolute;
   font-family: "Arial", sans-serif;
   color: #444444;
   font-size: 12px;
   line-height: 12px;
+  background-color: #eaeaea;
+  top: 81%;
+  left: 17%;
 }
 
 .result__price {
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin: 34px 0 20px;
 }
 
 @media (min-width: v.$tablet-width) {
@@ -58,6 +76,18 @@
   .result__wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .result__title {
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .result__text {
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .result__photo {

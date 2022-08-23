@@ -5,22 +5,22 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
 }
 
 @media (min-width: v.$tablet-width) {
   .main-header {
     width: 768px;
-    padding: 24px 30px 65px;
+    padding: 0 30px;
     border: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 @media (min-width: v.$desktop-width) {
   .main-header {
     width: 1440px;
-    padding: 53px 110px 32px;
+    padding: 0 110px;
   }
 }
