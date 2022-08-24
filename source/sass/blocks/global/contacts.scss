@@ -1,5 +1,9 @@
 @use "variables.scss" as v;
 
+.contacts {
+  position: relative;
+}
+
 .contacts--background {
   background-color: #f2f2f2;
 }
@@ -12,13 +16,6 @@
   width: 280px;
   display: flex;
   justify-content: space-between;
-}
-
-.contacts__map {
-  min-width: 320px;
-  min-height: 320px;
-  background-color: #eaeaea;
-  background-image: url("../img/map.png");
 }
 
 @media (min-width: v.$tablet-width) {
@@ -40,6 +37,9 @@
     padding: 56px 80px;
     position: absolute;
     background-color: #ffffff;
+    width: 565px;
+    left: 110px;
+    top: 98px;
   }
 
   .contacts__adress {

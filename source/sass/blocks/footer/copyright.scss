@@ -1,9 +1,10 @@
 @use "variables.scss" as v;
 
 .copyright {
-  max-width: 280px;
+  width: 280px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .copyright___link-text {
@@ -15,6 +16,6 @@
 
 @media (min-width: v.$tablet-width) {
   .copyright {
-    max-width: 163px;
+    width: 163px;
   }
 }

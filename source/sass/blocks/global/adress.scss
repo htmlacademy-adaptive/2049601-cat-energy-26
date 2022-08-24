@@ -1,3 +1,5 @@
+@use "variables.scss" as v;
+
 .adress {
   line-height: 20px;
 }
@@ -5,9 +7,25 @@
 .adress__welcome {
   text-transform: uppercase;
   color: #111111;
+  margin: 0;
 }
 
 .adress__text {
   font-family: "Arial", sans-serif;
   color: #444444;
+  margin: 0;
+}
+
+@media (min-width: v.$tablet-width) {
+  .adress__welcome {
+    width: 170px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .adress__text {
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

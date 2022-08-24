@@ -69,13 +69,17 @@
 
 @media (min-width: v.$tablet-width) {
   .result {
-    padding: 43px 30px 0;
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
     background-color: #ffffff;
+    background-image: linear-gradient(#ffffff 0%, #ffffff 57%, #eaeaea 57%, #eaeaea 100%);
+    min-height: 1082px;
   }
 
   .result__wrapper {
+    padding: 43px 30px 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   .result__title {
@@ -84,29 +88,96 @@
     line-height: 60px;
   }
 
+  .result__list {
+    width: 366px;
+  }
+
+  .result__item {
+    width: 162px;
+  }
+
   .result__text {
     margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .result__photo {
-    background-color: #eaeaea;
+  .result__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .result__description {
+    padding: 0 8px 0;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    top: 86%;
+    left: 11%;
+  }
+
+  .result__description br {
+    display: none;
+  }
+
+  .result__wrapper-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .result__price {
+    font-size: 20px;
+    width: 174px;
+    margin: 0;
+    text-align: right;
   }
 }
 
 @media (min-width: v.$desktop-width) {
   .result {
-    padding: 0 110px 75px;
-    display: flex;
     background-image: linear-gradient(#ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
+    min-height: 598px;
+    border: none;
   }
 
   .result__wrapper {
+    padding: 0 110px 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .result__wrapper-desctop {
+    width: 436px;
+  }
+
+  .result__title {
+    margin-bottom: 146px;
+  }
+
+  .result__text {
+    margin-bottom: 69px;
+  }
+
+  .result__wrapper-list {
     display: block;
+  }
+
+  .result__list {
+    margin-bottom: 55px;
   }
 
   .result__photo {
     background-color: transparent;
+  }
+
+  .result__price {
+    width: 100%;
+    text-align: left;
+  }
+
+  .result__price-value {
+    margin-left: 63px;
   }
 }
