@@ -13,10 +13,6 @@
   border-top: 1px solid #e6e6e6;
 }
 
-.main-menu__item:last-of-type .main-menu__link {
-  border-bottom: 1px solid #d9d9d9;
-}
-
 @media (min-width: v.$tablet-width) {
   .main-menu {
     display: flex;
@@ -60,10 +56,9 @@
     font-size: 20px;
     line-height: 30px;
     padding: 69px 0;
-    color: #ffffff;
   }
 
   .main-menu__item-current::after {
-    background-color: #ffffff;
+    background-color: #ffffff;    /*Почему-то не рботает*/
   }
 }

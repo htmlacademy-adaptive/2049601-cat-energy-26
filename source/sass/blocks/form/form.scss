@@ -17,21 +17,44 @@
 }
 
 .form__questionary {
-  padding: 0 20px 24px;
   border: none;
-  border-bottom: 1px solid #d9d9d9;
 }
 
-.form__radio {
-  padding: 0 20px 20px;
-  border: none;
-  border-bottom: 1px solid #d9d9d9;
+.form__questionary-wrapper {
+  padding: 0 20px 24px;
 }
 
 .form__questionary--contacts {
-  padding: 26px 20px 24px;
   border: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #68b738;
+    top: 44px;
+    right: -60px;
+  }
 }
+
+.form__questionary-wrapper-contacts {
+  padding: 26px 20px 24px;
+}
+
+.form__radio {
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+}
+
+.form__radio-wrapper {
+  padding: 22px 20px 20px;
+}
+
 
 .form__comment {
   padding: 0 20px 23px;

@@ -12,6 +12,14 @@
   list-style-type: none;
 }
 
+.control__input {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
 .control__name {
   font-size: 16px;
   color: #222222;

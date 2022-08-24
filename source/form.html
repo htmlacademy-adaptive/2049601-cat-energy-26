@@ -84,64 +84,70 @@
       <p class="form__text container">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
       <!-- Questionary -->
-      <div class="form__wrapper-desctop container">
-        <fieldset class="form__questionary questionary container">
-          <h2 class="visually-hidden">Данные о коте</h2>
-          <ul class="questionary__list">
-            <li class="questionary__item">
-              <label class="questionary__label" for="name">Имя:*</label>
-              <input class="questionary__input" type="text" id="name" name="name" placeholder="Барсик" required>
-            </li>
-            <li class="questionary__item">
-              <label class="questionary__label" for="weight">Вес(кг):*</label>
-              <input class="questionary__input" type="text" id="weight" name="weight" placeholder="7" required>
-            </li>
-            <li class="questionary__item">
-              <label class="questionary__label" for="years">Возраст(лет):*</label>
-              <input class="questionary__input" type="text" id="years" name="years" placeholder="7">
-            </li>
-          </ul>
+      <div class="form__wrapper-desctop">
+        <fieldset class="form__questionary questionary">
+          <div class="form__questionary-wrapper container">
+            <h2 class="visually-hidden">Данные о коте</h2>
+            <ul class="questionary__list">
+              <li class="questionary__item">
+                <label class="questionary__label" for="name">Имя:*</label>
+                <input class="questionary__input" type="text" id="name" name="name" placeholder="Барсик" required>
+              </li>
+              <li class="questionary__item">
+                <label class="questionary__label" for="weight">Вес(кг):*</label>
+                <input class="questionary__input" type="text" id="weight" name="weight" placeholder="7" required>
+              </li>
+              <li class="questionary__item">
+                <label class="questionary__label" for="years">Возраст(лет):*</label>
+                <input class="questionary__input" type="text" id="years" name="years" placeholder="7">
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <!-- Programm -->
-        <fieldset class="form__radio control container">
-          <h2 class="visually-hidden">Выбор программы питания</h2>
-          <ul class="control__list">
-            <li class="control__item">
-              <label class="control__label">
-                <input class="control__input" type="radio" name="programm" value="slim" checked>
-                <span class="control__name">Похудение</span>
-              </label>
-            </li>
-            <li class="control__item">
-              <label class="control__label">
-                <input class="control__input" type="radio" name="programm" value="pro">
-                <span class="control__name">Набор массы</span>
-              </label>
-            </li>
-            <li class="control__item">
-              <label class="control__label">
-                <input class="control__input" type="radio" name="programm" value="unknown">
-                <span class="control__name">Не знаю (нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
+        <fieldset class="form__radio control">
+          <div class="form__radio-wrapper container">
+            <h2 class="visually-hidden">Выбор программы питания</h2>
+            <ul class="control__list">
+              <li class="control__item">
+                <label class="control__label">
+                  <input class="control__input" type="radio" name="programm" value="slim" checked>
+                  <span class="control__name">Похудение</span>
+                </label>
+              </li>
+              <li class="control__item">
+                <label class="control__label">
+                  <input class="control__input" type="radio" name="programm" value="pro">
+                  <span class="control__name">Набор массы</span>
+                </label>
+              </li>
+              <li class="control__item">
+                <label class="control__label">
+                  <input class="control__input" type="radio" name="programm" value="unknown">
+                  <span class="control__name">Не знаю (нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
       </div>
       <!-- Questionary -->
-      <fieldset class="form__questionary form__questionary--contacts questionary container">
-        <h2 class="questionary__title">Контактные данные
-          (владельца кота)</h2>
-        <ul class="questionary__list questionary__list--contacts">
-          <li class="questionary__item">
-            <label class="questionary__label" for="email">E-mail:*</label>
-            <input class="questionary__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
-              required>
-          </li>
-          <li class="questionary__item">
-            <label class="questionary__label" for="tel">Телефон:*</label>
-            <input class="questionary__input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-          </li>
-        </ul>
+      <fieldset class="form__questionary form__questionary--contacts questionary">
+        <div class="form__questionary-wrapper-contacts container">
+          <h2 class="questionary__title">Контактные данные
+            (владельца кота)</h2>
+          <ul class="questionary__list questionary__list--contacts">
+            <li class="questionary__item">
+              <label class="questionary__label" for="email">E-mail:*</label>
+              <input class="questionary__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
+                required>
+            </li>
+            <li class="questionary__item">
+              <label class="questionary__label" for="tel">Телефон:*</label>
+              <input class="questionary__input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+            </li>
+          </ul>
+        </div>
       </fieldset>
       <!-- Comment -->
       <fieldset class="form__comment comment container">

@@ -4,6 +4,8 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 .questionary__list {
@@ -12,10 +14,28 @@
   list-style-type: none;
 }
 
+.questionary__item {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
 .questionary__label {
+  margin-right: 12px;
   font-size: 16px;
   color: #444444;
   text-transform: uppercase;
+}
+
+.questionary__input {
+  padding: 13px 16px 15px 16px;
+  flex-grow: 1;
+  border: 1px solid #e7e7e7;
 }
 
 .questionary__input::placeholder {
