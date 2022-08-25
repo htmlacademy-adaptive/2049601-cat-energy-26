@@ -4,6 +4,8 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 34px;
 }
 
 .control__list {
@@ -12,25 +14,61 @@
   list-style-type: none;
 }
 
-.control__input {
-  margin-bottom: 24px;
+.control__item {
+  margin-bottom: 13px;
 
   &:last-child {
     margin: 0;
   }
 }
 
+.control__label {
+  padding-left: 45px;
+  position: relative;
+}
+
 .control__name {
   font-size: 16px;
   color: #222222;
+  text-transform: uppercase;
+}
+
+.control__mark {
+  position: absolute;
+  width: 40px;
+  height: 40px;
 }
 
 @media (min-width: v.$tablet-width) {
+  .control__title {
+    display: inline-block;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .control__list--radio {
+    padding: 25px 30px;
+    border: 1px solid #e7e7e7;
+  }
+
   .control__list--checkbox {
     display: grid;
     grid-template-columns: repeat(2, 221px);
     row-gap: 23px;
     column-gap: 123px;
+  }
+
+  .control__label {
+    padding-left: 60px;
+  }
+
+  .control__name {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

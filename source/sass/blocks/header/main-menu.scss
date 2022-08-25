@@ -52,13 +52,17 @@
 }
 
 @media (min-width: v.$desktop-width) {
+  .main-menu--link-desktop {
+    color: #ffffff;
+  }
+
   .main-menu__link {
     font-size: 20px;
     line-height: 30px;
     padding: 69px 0;
   }
 
-  .main-menu__item-current::after {
-    background-color: #ffffff;    /*Почему-то не рботает*/
+  .main-menu__item--current-index::after {
+    background-color: #ffffff;
   }
 }

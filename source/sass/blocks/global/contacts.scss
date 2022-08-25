@@ -18,6 +18,11 @@
   justify-content: space-between;
 }
 
+.contacts__map-frame {
+  width: 100%;
+  height: 362px;
+}
+
 @media (min-width: v.$tablet-width) {
   .contacts__wrapper {
     padding: 56px 70px;
@@ -25,6 +30,10 @@
 
   .contacts__adress {
     width: 628px;
+  }
+
+  .contacts__map-frame {
+    height: 396px;
   }
 }
 
@@ -45,4 +54,9 @@
   .contacts__adress {
     width: 405px;
   }
+
+  .contacts__map-frame {
+    height: 400px;
+  }
 }
+
