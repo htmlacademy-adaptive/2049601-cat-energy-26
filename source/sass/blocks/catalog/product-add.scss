@@ -2,14 +2,16 @@
 
 .product-add {
   padding: 13px 20px 19px;
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid #cdcdcd;
 
   &:last-of-type {
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
 .product-add__title {
+  margin: 0;
+  margin-bottom: 13px;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -19,6 +21,10 @@
 }
 
 .product-add__info {
+  margin: 0;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;

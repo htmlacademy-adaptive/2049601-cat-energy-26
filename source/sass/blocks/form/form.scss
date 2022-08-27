@@ -179,16 +179,47 @@
   }
 
   .form__wrapper-desctop {
-    display: flex;
-    padding: 0 110px;
+    width: 1440px;
+    box-sizing: border-box;
+    padding: 0 110px 70px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 568px);
+    gap: 80px;
   }
 
-  .form__questionary--contacts {
-    padding: 69px 110px;
+  .form__questionary-wrapper {
+    width: auto;
+    padding: 0;
+  }
+
+  .form__radio-wrapper {
+    width: auto;
+    padding: 0;
+  }
+
+  .form__questionary-wrapper-contacts {
+    padding: 0 110px 70px;
+  }
+
+  .form__questionary--contacts::before {
+    right: 0;
+  }
+
+  .form__comment::before {
+    right: 0;
   }
 
   .form__comment-wrapper {
     padding: 0 110px 67px;
+  }
+
+  .form__checkbox::before {
+    right: 0;
+  }
+
+  .form__checkbox-wrapper {
+    padding: 0 110px 60px;
   }
 
   .form__wrapper-button {

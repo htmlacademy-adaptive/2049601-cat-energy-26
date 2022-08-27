@@ -1,8 +1,25 @@
 @use "variables.scss" as v;
 
 .product {
-  padding: 18px 20px 25px;
   border-top: 1px solid #ebebeb;
+}
+
+.product__wrapper {
+  padding: 18px 20px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__info-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  margin-bottom: 13px;
+}
+
+.product__link-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product__link {
@@ -10,9 +27,18 @@
   line-height: 20px;
   color: #222222;
   text-transform: uppercase;
+  margin-right: 66px;
+  margin-bottom: 18px;
+}
+
+.product__description {
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .product__info-item {
+  display: flex;
+  justify-content: space-between;
   font-family: "Arial", sans-serif;
   color: #444444;
   font-size: 12px;

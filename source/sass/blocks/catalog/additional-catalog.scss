@@ -1,5 +1,24 @@
 @use "variables.scss" as v;
 
+.additional-catalog {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #68b738;
+    top: 40px;
+    right: -113px;
+  }
+}
+
+.additional-catalog__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .additional-catalog__title {
   padding: 25px 20px 36px;
   margin: 0;

@@ -140,8 +140,8 @@
           <h2 class="questionary__title">Контактные данные
             (владельца кота)</h2>
           <ul class="questionary__list questionary__list--contacts">
-            <li class="questionary__item">
-              <label class="questionary__label" for="email">E-mail:*</label>
+            <li class="questionary__item questionary__item--contacts">
+              <label class="questionary__label questionary__label--email" for="email">E-mail:*</label>
               <div class="questionary__input-wrapper">
                 <input class="questionary__input-contacts" type="email" id="email" name="email"
                   placeholder="kuklachev@gmail.com" required>
@@ -156,8 +156,8 @@
                 </svg>
               </div>
             </li>
-            <li class="questionary__item">
-              <label class="questionary__label" for="tel">Телефон:*</label>
+            <li class="questionary__item questionary__item--contacts">
+              <label class="questionary__label questionary__label--phone" for="tel">Телефон:*</label>
               <div class="questionary__input-wrapper">
                 <input class="questionary__input-contacts" type="tel" id="tel" name="tel"
                   placeholder="8 (960) 900-60-90" required>
@@ -192,33 +192,33 @@
         </div>
       </fieldset>
       <!-- Additionally -->
-      <fieldset class="form__checkbox control control--checkbox">
+      <fieldset class="form__checkbox control control--control__item">
         <div class="form__checkbox-wrapper container">
           <h2 class="control__title">Дополнительно</h2>
           <ul class="control__list control__list--checkbox">
-            <li class="control__item">
-              <label class="control__label">
+            <li class="control__item control__item--checkbox">
+              <label class="control__label control__label--checkbox">
                 <input class="control__input visually-hidden" type="checkbox" name="sweetener" checked>
                 <span class="control__mark control__mark--checkbox"></span>
                 <span class="control__name">Сахарозаменитель</span>
               </label>
             </li>
-            <li class="control__item">
-              <label class="control__label">
+            <li class="control__item control__item--checkbox">
+              <label class="control__label control__label--checkbox">
                 <input class="control__input visually-hidden" type="checkbox" name="water">
                 <span class="control__mark control__mark--checkbox"></span>
                 <span class="control__name">Питьевая вода</span>
               </label>
             </li>
-            <li class="control__item">
-              <label class="control__label">
+            <li class="control__item control__item--checkbox">
+              <label class="control__label control__label--checkbox">
                 <input class="control__input visually-hidden" type="checkbox" name="milk">
                 <span class="control__mark control__mark--checkbox"></span>
                 <span class="control__name">Молоко</span>
               </label>
             </li>
-            <li class="control__item">
-              <label class="control__label">
+            <li class="control__item control__item--checkbox">
+              <label class="control__label control__label--checkbox">
                 <input class="control__input visually-hidden" type="checkbox" name="vitamins">
                 <span class="control__mark control__mark--checkbox"></span>
                 <span class="control__name">Витамины</span>
