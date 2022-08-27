@@ -8,6 +8,11 @@
 
 @media (min-width: v.$tablet-width) {
   .main-catalog {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .main-catalog-wrapper {
     padding: 0 30px 68px;
   }
 

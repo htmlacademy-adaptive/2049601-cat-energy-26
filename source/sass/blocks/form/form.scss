@@ -125,6 +125,7 @@
     width: 100%;
     top: 24px;
     z-index: -1;
+    right: 0;
   }
 
   .form__comment::before {
@@ -134,7 +135,6 @@
     height: 2px;
     background-color: #68b738;
     top: 24px;
-    right: -60px;
     z-index: -1;
   }
 
@@ -149,7 +149,6 @@
     height: 2px;
     background-color: #68b738;
     top: 24px;
-    right: -60px;
     z-index: -1;
   }
 
@@ -202,20 +201,8 @@
     padding: 0 110px 70px;
   }
 
-  .form__questionary--contacts::before {
-    right: 0;
-  }
-
-  .form__comment::before {
-    right: 0;
-  }
-
   .form__comment-wrapper {
     padding: 0 110px 67px;
-  }
-
-  .form__checkbox::before {
-    right: 0;
   }
 
   .form__checkbox-wrapper {
