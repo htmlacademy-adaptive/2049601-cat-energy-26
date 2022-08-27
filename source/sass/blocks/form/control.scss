@@ -15,7 +15,7 @@
 }
 
 .control__item {
-  margin-bottom: 13px;
+  margin-bottom: 19px;
 
   &:last-child {
     margin: 0;
@@ -23,6 +23,7 @@
 }
 
 .control__label {
+  display: block;
   padding-left: 45px;
   position: relative;
 }
@@ -35,8 +36,38 @@
 
 .control__mark {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  left: 0;
+  bottom: -35%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+
+  &--radio {
+    border-radius: 50%;
+  }
+}
+
+.control__input[type="radio"]:checked + .control__mark--radio::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #68b738;
+  border-radius: 50%;
+  top: 25%;
+  left: 25%;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark--checkbox::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/checkbox-mark.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 14px;
+  top: 25%;
+  left: 25%;
 }
 
 @media (min-width: v.$tablet-width) {
@@ -69,6 +100,22 @@
   .control__name {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .control__mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .control__input[type="radio"]:checked + .control__mark--radio::before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .control__input[type="checkbox"]:checked + .control__mark--checkbox::before {
+    width: 24px;
+    height: 19px;
+    background-size: 24px 19px;
   }
 }
 
