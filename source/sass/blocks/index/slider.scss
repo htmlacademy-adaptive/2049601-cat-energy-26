@@ -1,6 +1,29 @@
+.slider {
+  position: relative;
+  width: 280px;
+  height: 256px;
+}
+
+.slider__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider__scale {
+  width: 4px;
+  height: 256px;
+  background-color: #666666;
+  position: absolute;
+  border-radius: 2px;
+}
+
 .slider__toggle {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #666666;
+  border-radius: 20px;
+  top: 100px;
+  left: -18px;
 }
