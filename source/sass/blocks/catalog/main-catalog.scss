@@ -12,7 +12,7 @@
     margin: 0 auto;
   }
 
-  .main-catalog-wrapper {
+  .main-catalog__wrapper {
     padding: 0 30px 68px;
   }
 
@@ -25,19 +25,17 @@
 
 @media (min-width: v.$desktop-width) {
   .main-catalog {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .main-catalog__wrapper {
     padding: 0 110px 76px;
   }
 
   .main-catalog__list {
-    display: grid;
     grid-template-columns: repeat(4, 245px);
     column-gap: 63px;
     row-gap: 80px;
-  }
-
-  .main-catalog__wrapper-desctop {
-    padding: 0 110px 86px;
-    display: flex;
-    justify-content: space-between;
   }
 }

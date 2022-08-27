@@ -57,3 +57,24 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: v.$desktop-width) {
+  .product-add {
+    padding: 0;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .product__add-wrapper {
+    width: 613px;
+    margin: 0;
+    align-items: center;
+  }
+
+  .product-add__order {
+    width: 244px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+

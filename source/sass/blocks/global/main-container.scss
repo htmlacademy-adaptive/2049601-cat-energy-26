@@ -35,8 +35,11 @@
 }
 
 @media (min-width: v.$desktop-width) {
-  .main-container__title-form,
-  .main-container__title-catalog {
+  .main-container__title-form {
     padding: 19px 110px 56px;
+  }
+
+  .main-container__title-catalog {
+    padding: 19px 110px 84px;
   }
 }
