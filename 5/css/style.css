@@ -141,6 +141,7 @@ a {
 .contacts__map-frame {
   width: 100%;
   height: 362px;
+  border: none;
 }
 
 @media (min-width: 768px) {
@@ -296,14 +297,15 @@ a {
   }
 }
 @media (min-width: 1440px) {
-  .main-menu--link-desktop {
+  .main-menu__link-desktop {
     color: #ffffff;
   }
 
   .main-menu__link {
     font-size: 20px;
     line-height: 30px;
-    padding: 69px 0;
+    padding: 40px 0;
+    margin: 29px 0;
   }
 
   .main-menu__item--current-index::after {
@@ -374,6 +376,7 @@ a {
     position: absolute;
     width: 100%;
     background-color: #ffffff;
+    z-index: 1;
   }
 }
 @media (min-width: 768px) {
@@ -402,11 +405,32 @@ a {
   align-items: center;
 }
 
+.logo__icon--tablet {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .logo {
     margin: 0;
-    width: 175px;
     padding: 0;
+  }
+
+  .logo__icon--moble {
+    display: none;
+  }
+
+  .logo__icon--tablet {
+    display: block;
+  }
+
+  .logo__icon-text {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .logo__icon--tablet {
+    width: 202px;
+    height: 59px;
   }
 }
 .main-footer {
@@ -496,22 +520,23 @@ a {
     border: none;
   }
 }
-.copyright {
+.copyright___link {
   width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.copyright___link-text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
 }
 
+.copyright__icon {
+  fill: #666666;
+}
+
 @media (min-width: 768px) {
-  .copyright {
+  .copyright___link {
     width: 163px;
   }
 }
@@ -701,7 +726,7 @@ a {
   text-transform: uppercase;
 }
 
-.categories_icon {
+.categories__icon {
   position: absolute;
   top: 17px;
   left: 87px;
@@ -841,41 +866,26 @@ a {
 .advantages__item:last-child {
   margin-bottom: 0;
 }
-.advantages__item--composition::before {
+.advantages__item::before {
   content: "";
   position: absolute;
   width: 60px;
   height: 60px;
-  background-image: url("../img/advantages-composition.svg");
   top: -4px;
   left: 0;
+}
+.advantages__item--composition::before {
+  background-image: url("../img/advantages-composition.svg");
 }
 .advantages__item--form::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
   background-image: url("../img/advantages-form.svg");
-  top: -4px;
-  left: 0;
 }
 .advantages__item--use::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
   background-image: url("../img/advantages-use.svg");
-  top: -4px;
-  left: 0;
 }
 .advantages__item--result::before {
   content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
   background-image: url("../img/advantages-result.svg");
-  top: -4px;
-  left: 0;
 }
 
 @media (min-width: 768px) {
@@ -908,32 +918,11 @@ a {
   .advantages__item--result {
     padding-right: 0;
   }
-  .advantages__item--composition::before {
+  .advantages__item::before {
     width: 80px;
     height: 80px;
     background-size: 80px 80px;
     background-repeat: no-repeat;
-    top: 40px;
-    left: 0;
-  }
-  .advantages__item--form::before {
-    width: 80px;
-    height: 80px;
-    background-size: 80px 80px;
-    top: 40px;
-    left: 0;
-  }
-  .advantages__item--use::before {
-    width: 80px;
-    height: 80px;
-    background-size: 80px 80px;
-    top: 40px;
-    left: 0;
-  }
-  .advantages__item--result::before {
-    width: 80px;
-    height: 80px;
-    background-size: 80px 80px;
     top: 40px;
     left: 0;
   }
@@ -1109,6 +1098,11 @@ a {
     margin: 0;
     text-align: right;
   }
+
+  .result__photo-item {
+    width: 560px;
+    height: 512px;
+  }
 }
 @media (min-width: 1440px) {
   .result {
@@ -1170,6 +1164,21 @@ a {
   left: 0;
 }
 
+.slider__photo--before {
+  -webkit-clip-path: inset(0 50% 0 0);
+          clip-path: inset(0 50% 0 0);
+}
+
+.slider__photo--after {
+  -webkit-clip-path: inset(0 0 0 50%);
+          clip-path: inset(0 0 0 50%);
+}
+
+.slider__toggles {
+  position: absolute;
+  left: 50%;
+}
+
 .slider__scale {
   width: 4px;
   height: 256px;
@@ -1188,6 +1197,27 @@ a {
   left: -18px;
 }
 
+@media (min-width: 768px) {
+  .slider {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+  }
+
+  .slider__scale {
+    height: 512px;
+  }
+
+  .slider__toggle {
+    top: 250px;
+  }
+}
+@media (min-width: 1440px) {
+  .slider {
+    margin: 0;
+    bottom: 10px;
+  }
+}
 .main-catalog__list {
   margin: 0;
   padding: 0;
@@ -1590,7 +1620,7 @@ a {
     border-bottom: none;
   }
 
-  .product__add-wrapper {
+  .product-add__wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
@@ -1616,7 +1646,7 @@ a {
     border-top: 1px solid #cdcdcd;
   }
 
-  .product__add-wrapper {
+  .product-add__wrapper {
     width: 613px;
     margin: 0;
     align-items: center;
@@ -1877,10 +1907,12 @@ a {
 
 .questionary__input {
   min-width: 172px;
-  padding: 15px;
+  padding: 14px;
   box-sizing: border-box;
   flex-grow: 1;
   border: 1px solid #e7e7e7;
+  font-size: 16px;
+  line-height: 18px;
 }
 .questionary__input::placeholder {
   font-family: "Oswald", sans-serif;
@@ -1893,6 +1925,8 @@ a {
 .questionary__input-contacts {
   flex-grow: 1;
   border: none;
+  font-size: 16px;
+  line-height: 18px;
 }
 .questionary__input-contacts::placeholder {
   font-family: "Oswald", sans-serif;
@@ -1903,9 +1937,11 @@ a {
 }
 
 .questionary__input-wrapper {
-  min-width: 172px;
+  min-width: 204px;
   display: flex;
+  align-items: center;
   padding: 15px;
+  padding-right: 50px;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
 }
@@ -1939,7 +1975,9 @@ a {
 
   .questionary__input {
     min-width: 497px;
-    padding: 10px 20px;
+    padding: 11px 19px;
+    font-size: 20px;
+    line-height: 30px;
   }
   .questionary__input::placeholder {
     font-size: 20px;
@@ -1949,10 +1987,14 @@ a {
   .questionary__input-wrapper {
     flex-grow: 1;
     min-width: 535px;
-    padding: 10px 20px;
+    padding: 11px 19px;
     justify-content: space-between;
   }
 
+  .questionary__input-contacts {
+    font-size: 20px;
+    line-height: 30px;
+  }
   .questionary__input-contacts::placeholder {
     font-size: 20px;
     line-height: 30px;
