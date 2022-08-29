@@ -33,44 +33,30 @@
     margin-bottom: 0;
   }
 
-  &--composition::before {
+  &::before {
     content: "";
     position: absolute;
     width: 60px;
     height: 60px;
-    background-image: url("../img/advantages-composition.svg");
     top: -4px;
     left: 0;
+  }
+
+  &--composition::before {
+    background-image: url("../img/advantages-composition.svg");
   }
 
   &--form::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
     background-image: url("../img/advantages-form.svg");
-    top: -4px;
-    left: 0;
   }
 
   &--use::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
     background-image: url("../img/advantages-use.svg");
-    top: -4px;
-    left: 0;
   }
 
   &--result::before {
     content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
     background-image: url("../img/advantages-result.svg");
-    top: -4px;
-    left: 0;
   }
 }
 
@@ -105,35 +91,11 @@
       padding-right: 0;
     }
 
-    &--composition::before {
+    &::before {
       width: 80px;
       height: 80px;
       background-size: 80px 80px;
       background-repeat: no-repeat;
-      top: 40px;
-      left: 0;
-    }
-
-    &--form::before {
-      width: 80px;
-      height: 80px;
-      background-size: 80px 80px;
-      top: 40px;
-      left: 0;
-    }
-
-    &--use::before {
-      width: 80px;
-      height: 80px;
-      background-size: 80px 80px;
-      top: 40px;
-      left: 0;
-    }
-
-    &--result::before {
-      width: 80px;
-      height: 80px;
-      background-size: 80px 80px;
       top: 40px;
       left: 0;
     }

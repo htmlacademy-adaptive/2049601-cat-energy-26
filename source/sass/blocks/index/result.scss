@@ -132,6 +132,12 @@
     margin: 0;
     text-align: right;
   }
+
+  .result__photo-item {
+    width: 560px;
+    height: 512px;
+  }
+
 }
 
 @media (min-width: v.$desktop-width) {

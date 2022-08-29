@@ -37,10 +37,12 @@
 
 .questionary__input {
   min-width: 172px;
-  padding: 15px;
+  padding: 14px;
   box-sizing: border-box;
   flex-grow: 1;
   border: 1px solid #e7e7e7;
+  font-size: 16px;
+  line-height: 18px;
 
   &::placeholder {
     font-family: "Oswald", sans-serif;
@@ -54,6 +56,8 @@
 .questionary__input-contacts {
   flex-grow: 1;
   border: none;
+  font-size: 16px;
+  line-height: 18px;
 
   &::placeholder {
     font-family: "Oswald", sans-serif;
@@ -65,9 +69,11 @@
 }
 
 .questionary__input-wrapper {
-  min-width: 172px;
+  min-width: 204px;
   display: flex;
+  align-items: center;
   padding: 15px;
+  padding-right: 50px;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
 }
@@ -104,7 +110,9 @@
 
   .questionary__input {
     min-width: 497px;
-    padding: 10px 20px;
+    padding: 11px 19px;
+    font-size: 20px;
+    line-height: 30px;
 
     &::placeholder {
       font-size: 20px;
@@ -115,13 +123,18 @@
   .questionary__input-wrapper {
     flex-grow: 1;
     min-width: 535px;
-    padding: 10px 20px;
+    padding: 11px 19px;
     justify-content: space-between;
   }
 
-  .questionary__input-contacts::placeholder {
+  .questionary__input-contacts {
     font-size: 20px;
     line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 

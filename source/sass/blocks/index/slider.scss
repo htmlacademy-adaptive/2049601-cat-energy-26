@@ -1,3 +1,5 @@
+@use "variables.scss" as v;
+
 .slider {
   position: relative;
   width: 280px;
@@ -8,6 +10,19 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.slider__photo--before {
+  clip-path: inset(0 50% 0 0);
+}
+
+.slider__photo--after {
+  clip-path: inset(0 0 0 50%);
+}
+
+.slider__toggles {
+  position: absolute;
+  left: 50%;
 }
 
 .slider__scale {
@@ -26,4 +41,27 @@
   border-radius: 20px;
   top: 100px;
   left: -18px;
+}
+
+@media (min-width: v.$tablet-width) {
+  .slider {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+  }
+
+  .slider__scale {
+    height: 512px;
+  }
+
+  .slider__toggle {
+    top: 250px;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .slider {
+    margin: 0;
+    bottom: 10px;
+  }
 }

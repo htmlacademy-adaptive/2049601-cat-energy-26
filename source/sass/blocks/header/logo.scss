@@ -10,10 +10,32 @@
   align-items: center;
 }
 
+.logo__icon--tablet {
+  display: none;
+}
+
 @media (min-width: v.$tablet-width) {
   .logo {
     margin: 0;
-    width: 175px;
     padding: 0;
+  }
+
+  .logo__icon--moble {
+    display: none;
+  }
+
+  .logo__icon--tablet {
+    display: block;
+  }
+
+  .logo__icon-text {
+    display: none;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .logo__icon--tablet {
+    width: 202px;
+    height: 59px;
   }
 }

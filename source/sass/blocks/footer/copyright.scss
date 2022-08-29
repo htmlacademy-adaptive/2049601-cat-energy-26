@@ -1,21 +1,22 @@
 @use "variables.scss" as v;
 
-.copyright {
+.copyright___link {
   width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.copyright___link-text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
 }
 
+.copyright__icon {
+  fill: #666666;
+}
+
 @media (min-width: v.$tablet-width) {
-  .copyright {
+  .copyright___link {
     width: 163px;
   }
 }
