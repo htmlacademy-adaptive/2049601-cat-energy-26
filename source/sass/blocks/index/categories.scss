@@ -72,12 +72,26 @@
   line-height: 16px;
   border-top: 1px solid #d9d9d9;
   text-transform: uppercase;
+
+  &:focus {
+    outline: 1px solid #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
 }
 
 .categories__icon {
   position: absolute;
   top: 17px;
   left: 87px;
+
+  &--slim {
+    top: 11px;
+    left: 113px;
+  }
 }
 
 @media (min-width: v.$tablet-width) {

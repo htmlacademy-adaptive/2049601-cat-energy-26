@@ -28,6 +28,11 @@
   position: relative;
 }
 
+.control__label:hover .control__mark,
+.control__label:focus-within .control__mark {
+  border: 1px solid #bababa;
+}
+
 .control__name {
   font-size: 16px;
   color: #222222;
@@ -68,6 +73,11 @@
   background-size: 18px 14px;
   top: 25%;
   left: 25%;
+}
+
+.control__input[type="radio"]:disabled + .control__mark,
+.control__input[type="checkbox"]:disabled + .control__mark {
+  opacity: 0.3;
 }
 
 @media (min-width: v.$tablet-width) {

@@ -41,6 +41,39 @@
   border-radius: 20px;
   top: 100px;
   left: -18px;
+  z-index: 1;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 2px solid #68b738;
+  }
+
+  &:active {
+    border: 2px solid rgba(94, 170, 47, 0.4);
+  }
+}
+
+.slider__toggle-icon {
+  fill: #666666;
+}
+
+.slider__toggle:hover .slider__toggle-icon,
+.slider__toggle:focus .slider__toggle-icon {
+  fill: #68b738;
+}
+
+.slider__toggle:hover + .slider__scale,
+.slider__toggle:focus + .slider__scale {
+  background-color: #68b738;
+}
+
+.slider__toggle:active .slider__toggle-icon {
+  fill: rgba(94, 170, 47, 0.4);
+}
+
+.slider__toggle:active + .slider__scale {
+  background-color: rgba(94, 170, 47, 0.4);
 }
 
 @media (min-width: v.$tablet-width) {

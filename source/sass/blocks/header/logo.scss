@@ -10,9 +10,23 @@
   align-items: center;
 }
 
+.logo__img-link:focus {
+  outline: none;
+}
+
+.logo__img-link:hover .logo__icon,
+.logo__img-link:focus .logo__icon {
+  opacity: 0.8;
+}
+
+.logo__img-link:active .logo__icon {
+  opacity: 0.6;
+}
+
 .logo__icon--tablet {
   display: none;
 }
+
 
 @media (min-width: v.$tablet-width) {
   .logo {

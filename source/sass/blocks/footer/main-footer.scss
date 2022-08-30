@@ -13,6 +13,23 @@
 .main-footer__link {
   padding: 39px 0 32px;
   text-align: center;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.main-footer__logo {
+  fill: #111111;
+}
+
+.main-footer__link:hover .main-footer__logo,
+.main-footer__link:focus .main-footer__logo {
+  opacity: 0.8;
+}
+
+.main-footer__link:active .main-footer__logo {
+  opacity: 0.6;
 }
 
 .main-footer__social {

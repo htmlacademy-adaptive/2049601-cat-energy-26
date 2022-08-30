@@ -20,6 +20,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid #68b738;
+  }
+
+  &:active {
+    outline: none;
+  }
 }
 
 .product__link {
@@ -29,6 +38,16 @@
   text-transform: uppercase;
   margin-right: 66px;
   margin-bottom: 18px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: rgba(34, 34, 34, 0.6);
+  }
+
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+  }
 }
 
 .product__description {

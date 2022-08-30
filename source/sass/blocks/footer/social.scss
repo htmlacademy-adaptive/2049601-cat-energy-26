@@ -7,6 +7,10 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .social__item {
@@ -19,6 +23,23 @@
 
 .social__item:not(:last-child) {
   margin-right: 24px;
+}
+
+.social__link:focus {
+  outline: none;
+}
+
+.social__icon {
+  fill: #666666;
+}
+
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: #68b738;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: v.$tablet-width) {

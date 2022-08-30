@@ -1,5 +1,13 @@
 @use "variables.scss" as v;
 
+.copyright___link:hover .copyright__icon {
+  fill: #68b738;
+}
+
+.copyright___link:focus .copyright__icon {
+  fill: #68b738;
+}
+
 .copyright___link {
   width: 280px;
   display: flex;
@@ -9,6 +17,14 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__icon {

@@ -14,4 +14,23 @@
     color: #444444;
     background-color: #f2f2f2;
   }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--all:hover,
+  &--all:focus {
+    background-color: #ebebeb;
+  }
+
+  &--all:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }

@@ -11,6 +11,25 @@
   text-transform: uppercase;
   color: #000000;
   border-top: 1px solid #e6e6e6;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--desktop:hover,
+  &--desktop:focus {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &--desktop:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: v.$tablet-width) {
@@ -52,7 +71,7 @@
 }
 
 @media (min-width: v.$desktop-width) {
-  .main-menu__link-desktop {
+  .main-menu__link--desktop {
     color: #ffffff;
   }
 
