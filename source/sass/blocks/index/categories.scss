@@ -87,11 +87,6 @@
   position: absolute;
   top: 17px;
   left: 87px;
-
-  &--slim {
-    top: 11px;
-    left: 113px;
-  }
 }
 
 @media (min-width: v.$tablet-width) {
@@ -119,9 +114,9 @@
     line-height: 30px;
   }
 
-  .categories_icon {
+  .categories__icon {
     top: 10px;
-    left: 130px;
+    left: 115px;
   }
 
   .categories__list {

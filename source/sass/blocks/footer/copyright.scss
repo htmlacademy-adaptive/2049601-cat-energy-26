@@ -1,14 +1,14 @@
 @use "variables.scss" as v;
 
-.copyright___link:hover .copyright__icon {
+.copyright__link:hover .copyright__icon {
   fill: #68b738;
 }
 
-.copyright___link:focus .copyright__icon {
+.copyright__link:focus .copyright__icon {
   fill: #68b738;
 }
 
-.copyright___link {
+.copyright__link {
   width: 280px;
   display: flex;
   justify-content: space-between;
@@ -32,7 +32,7 @@
 }
 
 @media (min-width: v.$tablet-width) {
-  .copyright___link {
+  .copyright__link {
     width: 163px;
   }
 }
