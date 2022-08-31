@@ -66,6 +66,7 @@ a {
   display: inline-block;
   padding: 10px 0 10px 0;
   border: none;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   background-color: #68b738;
@@ -595,15 +596,15 @@ a {
     border: none;
   }
 }
-.copyright___link:hover .copyright__icon {
+.copyright__link:hover .copyright__icon {
   fill: #68b738;
 }
 
-.copyright___link:focus .copyright__icon {
+.copyright__link:focus .copyright__icon {
   fill: #68b738;
 }
 
-.copyright___link {
+.copyright__link {
   width: 280px;
   display: flex;
   justify-content: space-between;
@@ -613,10 +614,10 @@ a {
   line-height: 18px;
   color: #444444;
 }
-.copyright___link:focus {
+.copyright__link:focus {
   outline: none;
 }
-.copyright___link:active {
+.copyright__link:active {
   opacity: 0.3;
 }
 
@@ -625,7 +626,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  .copyright___link {
+  .copyright__link {
     width: 163px;
   }
 }
@@ -699,10 +700,10 @@ a {
 
   .program__img {
     position: absolute;
-    width: 709px;
+    width: 708px;
     height: 609px;
     z-index: -1;
-    left: 79px;
+    left: 30px;
     top: 224px;
   }
 }
@@ -828,10 +829,6 @@ a {
   top: 17px;
   left: 87px;
 }
-.categories__icon--slim {
-  top: 11px;
-  left: 113px;
-}
 
 @media (min-width: 768px) {
   .categories {
@@ -858,9 +855,9 @@ a {
     line-height: 30px;
   }
 
-  .categories_icon {
+  .categories__icon {
     top: 10px;
-    left: 130px;
+    left: 115px;
   }
 
   .categories__list {
@@ -2055,6 +2052,7 @@ a {
   box-sizing: border-box;
   flex-grow: 1;
   border: 1px solid #e7e7e7;
+  font-family: inherit;
   font-size: 16px;
   line-height: 18px;
 }
@@ -2081,6 +2079,7 @@ a {
   padding-right: 50px;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
+  font-family: inherit;
   font-size: 16px;
   line-height: 18px;
 }
@@ -2365,6 +2364,9 @@ a {
   width: 100%;
   box-sizing: border-box;
   border-color: #e7e7e7;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
 }
 .comment__input::placeholder {
   font-family: "Oswald", sans-serif;
@@ -2393,6 +2395,8 @@ a {
 
   .comment__input {
     min-height: 174px;
+    font-size: 20px;
+    line-height: 30px;
   }
   .comment__input::placeholder {
     font-size: 20px;
