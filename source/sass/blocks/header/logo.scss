@@ -2,13 +2,54 @@
 
 .logo {
   display: flex;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0 20px;
   justify-content: space-between;
   width: 190px;
+  height: 65px;
+  align-items: center;
 }
+
+.logo__img-link:focus {
+  outline: none;
+}
+
+.logo__img-link:hover .logo__icon,
+.logo__img-link:focus .logo__icon {
+  opacity: 0.8;
+}
+
+.logo__img-link:active .logo__icon {
+  opacity: 0.6;
+}
+
+.logo__icon--tablet {
+  display: none;
+}
+
 
 @media (min-width: v.$tablet-width) {
   .logo {
     margin: 0;
+    padding: 0;
+  }
+
+  .logo__icon--moble {
+    display: none;
+  }
+
+  .logo__icon--tablet {
+    display: block;
+  }
+
+  .logo__icon-text {
+    display: none;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .logo__icon--tablet {
+    width: 202px;
+    height: 59px;
   }
 }

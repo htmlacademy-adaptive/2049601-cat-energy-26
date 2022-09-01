@@ -1,20 +1,38 @@
 @use "variables.scss" as v;
 
-.copyright {
-  max-width: 280px;
-  display: flex;
-  justify-content: space-between;
+.copyright__link:hover .copyright__icon {
+  fill: #68b738;
 }
 
-.copyright___link-text {
+.copyright__link:focus .copyright__icon {
+  fill: #68b738;
+}
+
+.copyright__link {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__icon {
+  fill: #666666;
 }
 
 @media (min-width: v.$tablet-width) {
-  .copyright {
-    max-width: 163px;
+  .copyright__link {
+    width: 163px;
   }
 }

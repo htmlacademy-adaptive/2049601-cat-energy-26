@@ -7,16 +7,39 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  border: 1px solid #d9d9d9;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .social__item {
   min-width: 28px;
   min-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social__item:not(:last-child) {
   margin-right: 24px;
+}
+
+.social__link:focus {
+  outline: none;
+}
+
+.social__icon {
+  fill: #666666;
+}
+
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: #68b738;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: v.$tablet-width) {

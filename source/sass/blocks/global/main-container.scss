@@ -20,18 +20,26 @@
 }
 
 @media (min-width: v.$tablet-width) {
+  .main-container__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .main-container__title-catalog {
     padding: 0 30px 82px;
   }
 
   .main-container__title-form {
-    padding: 65px 70px 54px;
+    padding: 33px 70px 54px;
   }
 }
 
 @media (min-width: v.$desktop-width) {
-  .main-container__title-form,
+  .main-container__title-form {
+    padding: 19px 110px 56px;
+  }
+
   .main-container__title-catalog {
-    padding: 32px 110px 84px;
+    padding: 19px 110px 84px;
   }
 }
