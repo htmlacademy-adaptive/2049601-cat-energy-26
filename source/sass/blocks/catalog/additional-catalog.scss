@@ -49,7 +49,7 @@
   padding: 186px 0 44px;
   position: relative;
   background-color: #68b738;
-  background-image: url("../img/background-catalog.png");
+  background-image: url("../img/background-catalog@1x.png");
   background-repeat: no-repeat;
   background-size: 280px auto;
 
@@ -59,8 +59,16 @@
     width: 78px;
     height: 80px;
     background-image: url("../img/icon-gift-mobile.svg");
+    background-repeat: no-repeat;
     top: 60px;
     left: 101px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .additional-catalog__gift-wrapper {
+    background-image: url("../img/background-catalog@2x.png");
+    background-size: 280px auto;
   }
 }
 
