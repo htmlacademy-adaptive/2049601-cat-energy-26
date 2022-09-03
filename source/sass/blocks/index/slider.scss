@@ -55,12 +55,12 @@
 }
 
 .slider__toggle-icon {
-  fill: #666666;
+  color: #666666;
 }
 
 .slider__toggle:hover .slider__toggle-icon,
 .slider__toggle:focus .slider__toggle-icon {
-  fill: #68b738;
+  color: #68b738;
 }
 
 .slider__toggle:hover + .slider__scale,
@@ -69,7 +69,7 @@
 }
 
 .slider__toggle:active .slider__toggle-icon {
-  fill: rgba(94, 170, 47, 0.4);
+  color: rgba(94, 170, 47, 0.4);
 }
 
 .slider__toggle:active + .slider__scale {

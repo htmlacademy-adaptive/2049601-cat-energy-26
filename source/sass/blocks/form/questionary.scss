@@ -109,28 +109,22 @@
   transform: translateY(-50%);
 
   &--email {
-    stroke: #222222;
+    color: #222222;
   }
 
   &--phone {
-    fill: #222222;
+    color: #222222;
   }
 }
 
-.questionary__input-contacts:focus + .questionary__icon--email {
-  stroke: rgba(104, 183, 56, 1);
-}
-
+.questionary__input-contacts:focus + .questionary__icon--email,
 .questionary__input-contacts:focus + .questionary__icon--phone {
-  fill: rgba(104, 183, 56, 1);
+  color: rgba(104, 183, 56, 1);
 }
 
-.questionary__input-contacts:invalid + .questionary__icon--email {
-  stroke: #ff8282;
-}
-
+.questionary__input-contacts:invalid + .questionary__icon--email,
 .questionary__input-contacts:invalid + .questionary__icon--phone {
-  fill: #ff8282;
+  color: #ff8282;
 }
 
 @media (min-width: v.$tablet-width) {
