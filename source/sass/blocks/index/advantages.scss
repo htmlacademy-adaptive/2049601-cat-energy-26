@@ -110,6 +110,7 @@
 
   .advantages__list {
     width: 1220px;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
   }

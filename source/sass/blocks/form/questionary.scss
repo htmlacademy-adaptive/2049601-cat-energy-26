@@ -186,6 +186,7 @@
 @media (min-width: v.$desktop-width) {
   .questionary__list--contacts {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .questionary__input {
