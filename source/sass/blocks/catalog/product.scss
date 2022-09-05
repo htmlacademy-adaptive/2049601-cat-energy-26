@@ -13,10 +13,11 @@
 .product__info-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 
 .product__link-img {
+  margin-top: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +38,7 @@
   color: #222222;
   text-transform: uppercase;
   margin-right: 66px;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 
   &:hover,
   &:focus {
@@ -83,11 +84,11 @@
 
   .product__info-wrapper {
     grid-template-columns: 252px;
-    margin-bottom: 33px;
+    margin-bottom: 24px;
   }
 
   .product__link-img {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
 
   .product__img {

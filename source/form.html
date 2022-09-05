@@ -228,7 +228,7 @@
         программу питания для вашего кота</p>
       <!-- Questionary -->
       <div class="form__wrapper-desctop">
-        <fieldset class="form__questionary questionary">
+        <fieldset class="form__questionary form__questionary--desktop questionary">
           <div class="form__questionary-wrapper container">
             <h2 class="visually-hidden">Данные о коте</h2>
             <ul class="questionary__list">
@@ -237,7 +237,7 @@
                 <input class="questionary__input" type="text" id="name" name="name" placeholder="Барсик" required>
               </li>
               <li class="questionary__item">
-                <label class="questionary__label" for="weight">Вес(кг):*</label>
+                <label class="questionary__label questionary__label--weight" for="weight">Вес(кг):*</label>
                 <input class="questionary__input" type="text" id="weight" name="weight" placeholder="7" required>
               </li>
               <li class="questionary__item">
@@ -370,10 +370,10 @@
         </h2>
         <div class="contacts__adress adress">
           <p class="adress__welcome">
-            Приглашаем к сотрудничеству дилеров!
+            Приглашаем к&nbsp;сотрудничеству дилеров!
           </p>
           <p class="adress__text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8 <span class="adress__text-city">Санкт-Петербург</span>
           </p>
         </div>
       </div>

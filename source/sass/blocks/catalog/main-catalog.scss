@@ -19,7 +19,8 @@
   .main-catalog__list {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 55px;
   }
 }
 

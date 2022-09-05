@@ -1,7 +1,7 @@
 @use "variables.scss" as v;
 
 .product-add {
-  padding: 13px 0 19px;
+  padding: 12px 0 19px;
   border-top: 1px solid #cdcdcd;
 
   &:last-of-type {
@@ -41,7 +41,7 @@
   .product-add__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   .product-add__title {
@@ -51,7 +51,6 @@
   }
 
   .product-add__info {
-    width: 225px;
     margin: 0;
     font-size: 16px;
     line-height: 20px;

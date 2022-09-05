@@ -1,7 +1,7 @@
 @use "variables.scss" as v;
 
 .form__text {
-  padding: 0 20px 39px;
+  padding: 0 20px 20px;
   text-transform: uppercase;
 }
 
@@ -14,7 +14,7 @@
 
 .form__button {
   font-family: "Oswald", sans-serif;
-  padding: 7px 0 7px 0;
+  padding: 10px 0 10px 0;
   margin-bottom: 21px;
 }
 
@@ -23,10 +23,11 @@
   padding: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  overflow: hidden;
 }
 
 .form__questionary-wrapper {
-  padding: 0 20px 24px;
+  padding: 20px 20px 24px;
 }
 
 .form__questionary--contacts {
@@ -39,7 +40,7 @@
     width: 50%;
     height: 2px;
     background-color: #68b738;
-    top: 44px;
+    top: 42px;
     right: -60px;
   }
 }
@@ -54,6 +55,17 @@
   padding: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #68b738;
+    top: 16px;
+    right: -2px;
+  }
 }
 
 .form__radio {
@@ -61,17 +73,18 @@
   padding: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  overflow: hidden;
   border: none;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
 }
 
 .form__radio-wrapper {
-  padding: 22px 20px 20px;
+  padding: 28px 20px 24px;
 }
 
 .form__comment-wrapper {
-  padding: 0 20px 23px;
+  padding: 0 20px 19px;
   border: none;
 }
 
@@ -81,6 +94,7 @@
   padding: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -89,12 +103,12 @@
     height: 2px;
     background-color: #68b738;
     top: 16px;
-    right: -60px;
+    right: -23px;
   }
 }
 
 .form__checkbox-wrapper {
-  padding: 0 20px 34px;
+  padding: 0 20px 39px;
   border: none;
 }
 
@@ -108,11 +122,11 @@
   .form__text {
     font-size: 20px;
     line-height: 30px;
-    padding: 0 70px 66px;
+    padding: 0 70px 36px;
   }
 
   .form__questionary-wrapper {
-    padding: 0 70px 72px;
+    padding: 30px 70px 72px;
     border: none;
   }
 
@@ -179,17 +193,21 @@
 
 @media (min-width: v.$desktop-width) {
   .form__text {
-    padding: 0 110px 66px;
+    padding: 30px 110px 36px;
   }
 
   .form__wrapper-desctop {
     width: 1440px;
     box-sizing: border-box;
-    padding: 0 110px 70px;
+    padding: 30px 110px 70px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 568px);
     gap: 80px;
+  }
+
+  .form__questionary--desktop {
+    overflow: visible;
   }
 
   .form__questionary-wrapper {

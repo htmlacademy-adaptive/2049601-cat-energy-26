@@ -1,7 +1,7 @@
 @use "variables.scss" as v;
 
 .categories {
-  padding: 20px;
+  padding: 13px 20px 20px;
 }
 
 .categories__list {
@@ -10,7 +10,7 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: 280px;
-  gap: 20px;
+  gap: 22px;
 }
 
 .categories__item {
@@ -26,6 +26,7 @@
     background-color: #68b738;
     border-radius: 50%;
     top: 24px;
+    translate: 7%;
   }
 
   &--slim::after {
@@ -35,7 +36,7 @@
     height: 50px;
     background-image: url("../img/categories-slim.svg");
     top: 20px;
-    translate: 9%;
+    translate: 23%;
   }
 
   &--pro::after {
@@ -44,31 +45,34 @@
     width: 67px;
     height: 28px;
     background-image: url("../img/categories-pro.svg");
-    top: 38px;
-    translate: -16%;
+    top: 34px;
+    translate: -11%;
   }
 }
 
 .categories__title {
   margin: 0;
   margin-bottom: 30px;
+  padding-left: 70px;
+  padding-right: 35px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  text-align: center;
+  text-transform: uppercase;
 }
 
 .categories__description {
   font-family: "Arial", sans-serif;
   color: #444444;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .categories__link {
-  padding-top: 15px;
+  padding-top: 22px;
   position: relative;
   color: #000000;
+  font-size: 16px;
   line-height: 16px;
   border-top: 1px solid #d9d9d9;
   text-transform: uppercase;
@@ -85,16 +89,17 @@
 
 .categories__icon {
   position: absolute;
-  top: 17px;
-  left: 87px;
+  top: 21px;
+  left: 102px;
 }
 
 @media (min-width: v.$tablet-width) {
   .categories {
-    padding: 0 30px 45px;
+    padding: 13px 30px 45px;
   }
 
   .categories__title {
+    padding-left: 0;
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
@@ -102,7 +107,7 @@
   }
 
   .categories__description {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -115,8 +120,8 @@
   }
 
   .categories__icon {
-    top: 10px;
-    left: 115px;
+    top: 11px;
+    left: 130px;
   }
 
   .categories__list {
@@ -125,29 +130,29 @@
   }
 
   .categories__item {
-    padding: 77px 316px 53px 53px;
+    padding: 77px 313px 59px 53px;
 
     &::before {
       width: 200px;
       height: 200px;
-      top: 92px;
-      right: 62px;
+      top: 90px;
+      right: 75px;
     }
 
     &--slim::after {
       width: 140px;
       height: 194px;
       background-size: 140px 194px;
-      top: 82px;
-      right: 120px;
+      top: 80px;
+      right: 124px;
     }
 
     &--pro::after {
       width: 268px;
       height: 112px;
       background-size: 268px 112px;
-      top: 133px;
-      right: 5px;
+      top: 136px;
+      right: -1px;
     }
   }
 }
@@ -160,6 +165,7 @@
   .categories__title {
     margin-bottom: 73px;
     text-align: center;
+    padding-left: 100px;
   }
 
   .categories__description {

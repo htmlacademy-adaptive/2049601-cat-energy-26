@@ -6,7 +6,7 @@
 }
 
 .result__wrapper {
-  padding: 25px 20px 40px;
+  padding: 25px 20px 37px;
 }
 
 .result__title {
@@ -22,7 +22,9 @@
   padding: 0;
   width: 280px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 20px;
 }
 
 .result__text {
@@ -96,6 +98,7 @@
   }
 
   .result__text {
+    margin-right: 10px;
     margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
@@ -131,6 +134,11 @@
     width: 174px;
     margin: 0;
     text-align: right;
+  }
+
+  .result__price-value {
+    display: block;
+    margin-top: 10px;
   }
 
   .result__photo-item {
