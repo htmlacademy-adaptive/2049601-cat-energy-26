@@ -81,3 +81,13 @@
     line-height: 18px;
   }
 }
+
+@media (min-width: v.$desktop-width) {
+  .catalog-all__wrapper {
+    &::before,
+    &::after {
+      top: 80px;
+      left: 37%;
+    }
+  }
+}

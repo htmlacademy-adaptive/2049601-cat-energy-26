@@ -136,7 +136,7 @@
 
   .form__radio-wrapper {
     width: 768px;
-    padding: 0 70px 70px;
+    padding: 0 70px 75px;
   }
 
   .form__questionary--contacts::before {
@@ -172,7 +172,7 @@
   }
 
   .form__checkbox-wrapper {
-    padding: 0 70px 65px;
+    padding: 0 70px 59px;
   }
 
   .form__wrapper-button {
@@ -183,10 +183,10 @@
   }
 
   .form__button {
-    padding: 13px 0 13px 0;
+    width: 282px;
+    padding: 17px 0 16px 0;
     margin-bottom: 0;
     margin-right: 60px;
-    flex-grow: 1;
     font-size: 20px;
   }
 }
@@ -220,8 +220,12 @@
     padding: 0;
   }
 
+  .form__questionary--contacts::before {
+    top: 19px;
+  }
+
   .form__questionary-wrapper-contacts {
-    padding: 0 110px 70px;
+    padding: 0 110px 61px;
   }
 
   .form__comment-wrapper {
@@ -229,7 +233,7 @@
   }
 
   .form__checkbox-wrapper {
-    padding: 0 110px 60px;
+    padding: 0 110px 64px;
   }
 
   .form__wrapper-button {
@@ -237,6 +241,7 @@
   }
 
   .form__button {
+    width: 568px;
     margin-right: 80px;
   }
 }

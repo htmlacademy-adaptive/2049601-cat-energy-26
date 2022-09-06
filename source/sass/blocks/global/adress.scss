@@ -35,3 +35,9 @@
     margin-top: 20px;
   }
 }
+
+@media (min-width: v.$desktop-width) {
+  .adress__text {
+    text-align: left;
+  }
+}

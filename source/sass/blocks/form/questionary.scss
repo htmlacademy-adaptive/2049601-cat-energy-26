@@ -137,14 +137,14 @@
     display: inline-block;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
+    margin-bottom: 73px;
     background-color: #ffffff;
     padding-left: 40px;
     padding-right: 40px;
   }
 
   .questionary__item {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 
     &:last-child {
       margin: 0;
@@ -152,9 +152,13 @@
   }
 
   .questionary__label {
-    margin-right: 12px;
+    margin-right: 18px;
     font-size: 20px;
     line-height: 30px;
+
+    &--weight {
+      margin-right: 26px;
+    }
 
     &--email {
       margin-right: 18px;
@@ -180,6 +184,11 @@
   .questionary__input-contacts {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 21px;
+
+    &--phone {
+      padding-left: 21px;
+    }
 
     &::placeholder {
       font-size: 20px;

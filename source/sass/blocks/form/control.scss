@@ -85,21 +85,21 @@
     display: inline-block;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 57px;
+    margin-bottom: 61px;
     background-color: #ffffff;
     padding-left: 40px;
     padding-right: 40px;
   }
 
   .control__list--radio {
-    padding: 25px 30px;
+    padding: 29px 27px;
     border: 1px solid #e7e7e7;
   }
 
   .control__list--checkbox {
     display: grid;
     grid-template-columns: repeat(2, 221px);
-    row-gap: 32px;
+    row-gap: 41px;
     column-gap: 123px;
   }
 
@@ -136,7 +136,7 @@
 
 @media (min-width: v.$desktop-width) {
   .control__list--checkbox {
-    display: grid;
-    grid-template-columns: repeat(4, 221px);
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 79px;
   }
 }

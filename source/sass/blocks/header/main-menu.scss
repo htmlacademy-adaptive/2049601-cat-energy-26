@@ -61,7 +61,7 @@
       width: 100%;
       height: 2px;
       background-color: #68b738;
-      top: 69%;
+      top: 67%;
     }
   }
 
@@ -78,7 +78,11 @@
   .main-menu__link {
     font-size: 20px;
     line-height: 30px;
-    padding: 40px 0;
+    padding: 69px 0;
+  }
+
+  .main-menu__item--current::after {
+    top: 63%;
   }
 
   .main-menu__item--current-index::after {

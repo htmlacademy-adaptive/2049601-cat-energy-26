@@ -126,7 +126,7 @@
 
 @media (min-width: v.$desktop-width) {
   .additional-catalog__title-wrapper {
-    padding: 0 67px 80px;
+    padding: 0 67px 77px;
   }
 
   .additional-catalog__title {
@@ -149,6 +149,10 @@
     width: 245px;
     margin: 0;
     padding: 0;
+  }
+
+  .additional-catalog__gift-info {
+    text-align: center;
   }
 
   .additional-catalog__gift-wrapper {
