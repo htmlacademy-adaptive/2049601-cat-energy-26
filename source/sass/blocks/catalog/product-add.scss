@@ -41,7 +41,7 @@
   .product-add__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 
   .product-add__title {
@@ -54,6 +54,11 @@
     margin: 0;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .product-add__price {
+    margin-inline-start: 0;
+    margin-left: 50px;
   }
 }
 
@@ -78,5 +83,6 @@
 
   .product-add__info {
     width: 288px;
+    margin-top: 10px;
   }
 }

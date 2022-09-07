@@ -2,6 +2,7 @@
 
 .additional-catalog {
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -89,7 +90,7 @@
   }
 
   .additional-catalog__title-wrapper {
-    padding: 0 30px 80px;
+    padding: 0 30px 78px;
   }
 
   .additional-catalog__wrapper {
@@ -105,7 +106,7 @@
   }
 
   .additional-catalog__gift {
-    padding: 69px 30px 76px;
+    padding: 67px 30px 75px;
   }
 
   .additional-catalog__gift-wrapper {

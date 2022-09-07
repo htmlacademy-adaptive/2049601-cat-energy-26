@@ -141,6 +141,7 @@
     background-color: #ffffff;
     padding-left: 40px;
     padding-right: 40px;
+    margin-left: -40px;
   }
 
   .questionary__item {
@@ -187,7 +188,7 @@
     padding-left: 21px;
 
     &--phone {
-      padding-left: 21px;
+      padding-left: 15px;
     }
 
     &::placeholder {

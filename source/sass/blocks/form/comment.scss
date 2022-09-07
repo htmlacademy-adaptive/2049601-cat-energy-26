@@ -44,12 +44,14 @@
     background-color: #ffffff;
     padding-left: 40px;
     padding-right: 40px;
+    margin-left: -40px;
   }
 
   .comment__input {
     min-height: 174px;
     font-size: 20px;
     line-height: 30px;
+    padding: 10px 18px 14px;
 
     &::placeholder {
       font-size: 20px;
