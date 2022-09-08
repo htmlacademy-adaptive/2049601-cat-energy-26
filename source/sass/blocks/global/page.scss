@@ -17,3 +17,30 @@
   color: #000000;
   background-color: #ffffff;
 }
+
+@media (min-width: v.$desktop-width) {
+  .page__body--index {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 694px;
+      top: 0;
+      right: 0;
+      background-image: url("../img/index-background-desktop@1x.png");
+      background-color: #65a93c;
+      background-repeat: no-repeat;
+      background-size: auto 697px;
+      background-position-x: right;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .page__body--index::after {
+    background-image: url("../img/index-background-desktop@2x.png");
+  }
+}

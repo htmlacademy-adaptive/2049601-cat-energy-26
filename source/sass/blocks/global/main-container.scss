@@ -11,9 +11,8 @@
 }
 
 .main-container__title-catalog {
-  padding: 27px 20px 41px;
+  padding: 26px 20px 41px;
 }
-
 
 .main-container__title-form {
   padding: 27px 20px 37px;
@@ -26,7 +25,7 @@
   }
 
   .main-container__title-catalog {
-    padding: 0 30px 82px;
+    padding: 30px 30px 82px;
   }
 
   .main-container__title-form {
@@ -36,7 +35,7 @@
 
 @media (min-width: v.$desktop-width) {
   .main-container__title-form {
-    padding: 19px 110px 56px;
+    padding: 19px 110px 28px;
   }
 
   .main-container__title-catalog {

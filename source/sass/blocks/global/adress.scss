@@ -1,19 +1,19 @@
 @use "variables.scss" as v;
 
-.adress {
-  line-height: 20px;
-}
-
 .adress__welcome {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   color: #111111;
-  margin: 0;
 }
 
 .adress__text {
+  margin: 0;
+  padding-left: 16px;
+  line-height: 20px;
   font-family: "Arial", sans-serif;
   color: #444444;
-  margin: 0;
 }
 
 @media (min-width: v.$tablet-width) {
@@ -27,5 +27,17 @@
     width: 160px;
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+  }
+
+  .adress__text-city {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .adress__text {
+    text-align: left;
   }
 }

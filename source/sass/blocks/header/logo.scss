@@ -32,6 +32,8 @@
   .logo {
     margin: 0;
     padding: 0;
+    margin-bottom: 5px;
+    margin-right: 93px;
   }
 
   .logo__icon--moble {
@@ -48,6 +50,10 @@
 }
 
 @media (min-width: v.$desktop-width) {
+  .logo {
+    margin-right: 548px;
+  }
+
   .logo__icon--tablet {
     width: 202px;
     height: 59px;

@@ -1,7 +1,7 @@
 @use "variables.scss" as v;
 
 .form__text {
-  padding: 0 20px 39px;
+  padding: 0 20px 20px;
   text-transform: uppercase;
 }
 
@@ -14,17 +14,20 @@
 
 .form__button {
   font-family: "Oswald", sans-serif;
-  padding: 7px 0 7px 0;
+  padding: 10px 0 10px 0;
   margin-bottom: 21px;
 }
 
 .form__questionary {
   border: none;
   padding: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  overflow: hidden;
 }
 
 .form__questionary-wrapper {
-  padding: 0 20px 24px;
+  padding: 20px 20px 24px;
 }
 
 .form__questionary--contacts {
@@ -37,7 +40,7 @@
     width: 50%;
     height: 2px;
     background-color: #68b738;
-    top: 44px;
+    top: 42px;
     right: -60px;
   }
 }
@@ -48,31 +51,11 @@
 
 .form__comment {
   border: none;
-  padding: 0;
   position: relative;
-}
-
-.form__radio {
-  width: 100%;
   padding: 0;
-  border: none;
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #d9d9d9;
-}
-
-.form__radio-wrapper {
-  padding: 22px 20px 20px;
-}
-
-.form__comment-wrapper {
-  padding: 0 20px 23px;
-  border: none;
-}
-
-.form__checkbox {
-  border: none;
-  padding: 0;
-  position: relative;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -81,12 +64,51 @@
     height: 2px;
     background-color: #68b738;
     top: 16px;
-    right: -60px;
+    right: -2px;
+  }
+}
+
+.form__radio {
+  width: 100%;
+  padding: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  overflow: hidden;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+}
+
+.form__radio-wrapper {
+  padding: 28px 20px 24px;
+}
+
+.form__comment-wrapper {
+  padding: 0 20px 19px;
+  border: none;
+}
+
+.form__checkbox {
+  position: relative;
+  border: none;
+  padding: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #68b738;
+    top: 16px;
+    right: -23px;
   }
 }
 
 .form__checkbox-wrapper {
-  padding: 0 20px 34px;
+  padding: 0 20px 39px;
   border: none;
 }
 
@@ -100,11 +122,11 @@
   .form__text {
     font-size: 20px;
     line-height: 30px;
-    padding: 0 70px 66px;
+    padding: 0 70px 36px;
   }
 
   .form__questionary-wrapper {
-    padding: 0 70px 72px;
+    padding: 30px 70px 72px;
     border: none;
   }
 
@@ -114,55 +136,43 @@
 
   .form__radio-wrapper {
     width: 768px;
-    padding: 0 70px 70px;
+    padding: 0 70px 75px;
   }
 
-  .form__questionary--contacts {
-    overflow: hidden;
-
-    &::before {
-      width: 100%;
-      top: 24px;
-      z-index: -1;
-      right: 0;
-    }
+  .form__questionary--contacts::before {
+    width: 100%;
+    top: 24px;
+    z-index: -1;
+    right: 0;
   }
 
   .form__questionary-wrapper-contacts {
     padding: 0 70px 65px;
   }
 
-  .form__comment {
-    overflow: hidden;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: #68b738;
-      top: 24px;
-      z-index: -1;
-    }
+  .form__comment::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #68b738;
+    top: 24px;
+    z-index: -1;
   }
 
   .form__comment-wrapper {
     padding: 0 70px 65px;
   }
 
-  .form__checkbox {
-    overflow: hidden;
-
-    &::before {
-      width: 100%;
-      top: 24px;
-      z-index: -1;
-      right: 0;
-    }
+  .form__checkbox::before {
+    width: 100%;
+    top: 24px;
+    z-index: -1;
+    right: 0;
   }
 
   .form__checkbox-wrapper {
-    padding: 0 70px 65px;
+    padding: 0 70px 59px;
   }
 
   .form__wrapper-button {
@@ -173,27 +183,36 @@
   }
 
   .form__button {
-    padding: 13px 0 13px 0;
+    width: 282px;
+    padding: 17px 0 16px 0;
     margin-bottom: 0;
     margin-right: 60px;
-    flex-grow: 1;
     font-size: 20px;
+  }
+
+  .form__note {
+    font-size: 16px;
+    margin-bottom: 5px;
   }
 }
 
 @media (min-width: v.$desktop-width) {
   .form__text {
-    padding: 0 110px 66px;
+    padding: 30px 110px 36px;
   }
 
   .form__wrapper-desctop {
     width: 1440px;
     box-sizing: border-box;
-    padding: 0 110px 70px;
+    padding: 30px 110px 70px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 568px);
     gap: 80px;
+  }
+
+  .form__questionary--desktop {
+    overflow: visible;
   }
 
   .form__questionary-wrapper {
@@ -206,8 +225,12 @@
     padding: 0;
   }
 
+  .form__questionary--contacts::before {
+    top: 19px;
+  }
+
   .form__questionary-wrapper-contacts {
-    padding: 0 110px 70px;
+    padding: 0 110px 61px;
   }
 
   .form__comment-wrapper {
@@ -215,7 +238,7 @@
   }
 
   .form__checkbox-wrapper {
-    padding: 0 110px 60px;
+    padding: 0 110px 64px;
   }
 
   .form__wrapper-button {
@@ -223,6 +246,7 @@
   }
 
   .form__button {
+    width: 568px;
     margin-right: 80px;
   }
 }

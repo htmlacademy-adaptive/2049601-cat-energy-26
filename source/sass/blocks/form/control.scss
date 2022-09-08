@@ -5,7 +5,7 @@
   font-size: 24px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 42px;
 }
 
 .control__list {
@@ -15,7 +15,7 @@
 }
 
 .control__item {
-  margin-bottom: 19px;
+  margin-bottom: 23px;
 
   &:last-child {
     margin: 0;
@@ -59,8 +59,8 @@
   height: 14px;
   background-color: #68b738;
   border-radius: 50%;
-  top: 25%;
-  left: 25%;
+  top: 28%;
+  left: 28%;
 }
 
 .control__input[type="checkbox"]:checked + .control__mark--checkbox::before {
@@ -85,21 +85,22 @@
     display: inline-block;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 57px;
+    margin-bottom: 61px;
     background-color: #ffffff;
     padding-left: 40px;
     padding-right: 40px;
+    margin-left: -40px;
   }
 
   .control__list--radio {
-    padding: 25px 30px;
+    padding: 29px 27px;
     border: 1px solid #e7e7e7;
   }
 
   .control__list--checkbox {
     display: grid;
     grid-template-columns: repeat(2, 221px);
-    row-gap: 32px;
+    row-gap: 41px;
     column-gap: 123px;
   }
 
@@ -136,7 +137,7 @@
 
 @media (min-width: v.$desktop-width) {
   .control__list--checkbox {
-    display: grid;
-    grid-template-columns: repeat(4, 221px);
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 79px;
   }
 }

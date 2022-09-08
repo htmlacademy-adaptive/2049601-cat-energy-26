@@ -1,11 +1,11 @@
 @use "variables.scss" as v;
 
 .copyright__link:hover .copyright__icon {
-  fill: #68b738;
+  color: #68b738;
 }
 
 .copyright__link:focus .copyright__icon {
-  fill: #68b738;
+  color: #68b738;
 }
 
 .copyright__link {
@@ -28,7 +28,7 @@
 }
 
 .copyright__icon {
-  fill: #666666;
+  color: #666666;
 }
 
 @media (min-width: v.$tablet-width) {
