@@ -32,9 +32,8 @@ export const styles = () => {
 
 //HTML
 
-const html = () => {
+const copyhtml = () => {
   return gulp.src('source/*.html')
-  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'))
 }
 
@@ -139,7 +138,7 @@ export const build  = gulp.series (
   optimizeImages,
   gulp.parallel(
     styles,
-    html,
+    copyhtml,
     scripts,
     createWebp,
     svg,
@@ -153,7 +152,7 @@ export default gulp.series(
   copyImages,
   gulp.parallel(
     styles,
-    html,
+    copyhtml,
     scripts,
     createWebp,
     svg,
