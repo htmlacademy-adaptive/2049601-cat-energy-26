@@ -32,7 +32,7 @@ export const styles = () => {
 
 //HTML
 
-const copyhtml = () => {
+const html = () => {
   return gulp.src('source/*.html')
   .pipe(gulp.dest('build'))
 }
@@ -138,7 +138,7 @@ export const build  = gulp.series (
   optimizeImages,
   gulp.parallel(
     styles,
-    copyhtml,
+    html,
     scripts,
     createWebp,
     svg,
@@ -152,7 +152,7 @@ export default gulp.series(
   copyImages,
   gulp.parallel(
     styles,
-    copyhtml,
+    html,
     scripts,
     createWebp,
     svg,
