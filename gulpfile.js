@@ -2,8 +2,6 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
-import minify from 'gulp-csso';
-import htmlmin from 'gulp-htmlmin';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import rename from 'gulp-rename';
@@ -11,7 +9,6 @@ import del from 'del';
 import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import squoosh from 'gulp-libsquoosh';
-import webp from 'gulp-webp';
 import terser from 'gulp-terser';
 import csso from 'postcss-csso';
 
@@ -106,7 +103,7 @@ const clean = () => {
 function server(done) {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
