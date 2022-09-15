@@ -3,6 +3,7 @@ import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
+import htmlmin from "gulp-htmlmin";
 import browser from 'browser-sync';
 import rename from 'gulp-rename';
 import del from 'del';
@@ -31,6 +32,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'))
 }
 
