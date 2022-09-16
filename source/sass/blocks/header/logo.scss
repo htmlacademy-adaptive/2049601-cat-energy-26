@@ -23,7 +23,8 @@
   opacity: 0.6;
 }
 
-.logo__icon--tablet {
+.logo__icon--tablet,
+.logo__icon--desktop {
   display: none;
 }
 
@@ -55,7 +56,10 @@
   }
 
   .logo__icon--tablet {
-    width: 202px;
-    height: 59px;
+    display: none;
+  }
+
+  .logo__icon--desktop {
+    display: block;
   }
 }
