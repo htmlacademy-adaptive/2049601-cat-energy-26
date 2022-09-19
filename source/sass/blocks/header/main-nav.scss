@@ -52,14 +52,6 @@
   }
 }
 
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
-.main-nav--nojs .main-menu__item {
-  display: block;
-}
-
 @media (max-width: v.$mobile-width-only) {
   .main-nav--closed .main-menu__item {
     display: none;
@@ -71,6 +63,14 @@
     background-color: #ffffff;
     z-index: 1;
   }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-menu__item {
+  display: block;
 }
 
 @media (min-width: v.$tablet-width) {
